@@ -608,16 +608,32 @@ legend {
   font-size: 50px;
 }
 
+#main {
+  position: relative;
+}
+
 .bnr .bg {
   position: relative;
   margin-top: 100px;
 }
-.bnr .bg .bg img {
+.bnr .bg img {
   width: 100%;
   height: 800px;
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.2;
+}
+.bnr .bg img .sub-bg {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bnr .bg img .sub-bg img {
+  width: 832px;
+  height: 800px;
 }
 
 html,
