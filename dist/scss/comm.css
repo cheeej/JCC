@@ -1,0 +1,643 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url(../font/AnyConv.com__Poppins-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url(../font/AnyConv.com__Poppins-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url(../font/AnyConv.com__Poppins-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url(../font/poppins-bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url(../font/AnyConv.com__Poppins-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  src: url(../font/AnyConv.com__Poppins-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url(../font/AnyConv.com__Poppins-Black.woff) format("woff");
+}
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button,
+header,
+main,
+article {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #111;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Malgun Gothic";
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#u-skip {
+  position: relative;
+  z-index: 3000;
+}
+#u-skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#u-skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+.banner::before {
+  content: "";
+  display: block;
+}
+
+.banner img {
+  margin-top: 150px;
+  width: 100%;
+  max-width: 1440px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  width: 1440px;
+  height: 350px;
+  margin: 200px 470px;
+}
+
+.swiper::before {
+  content: "";
+  width: 500px;
+  height: 350px;
+  color: #000;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav-box {
+  width: 875px;
+  height: 810px;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin: 50px auto 0;
+}
+.nav-box .set-box {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-43%);
+  width: 732px;
+  height: 330px;
+  line-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: Noto Sans KR;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+.nav-box .set-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.nav-box .set-box .n-box1 {
+  width: 366px;
+  height: 100%;
+  background: #1e1513;
+  transition: all 0.5s;
+}
+.nav-box .set-box .n-box2 {
+  width: 366px;
+  height: 100%;
+  background: #1e1513;
+  transition: all 0.5s;
+}
+.nav-box .set-box .nb:hover {
+  background: #ff0000;
+}
+.nav-box .set-box2 {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-48%);
+  width: 875px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  font-family: Noto Sans KR;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+}
+.nav-box .set-box2 .text-box {
+  margin-top: 40px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 24px */
+  letter-spacing: 6.5px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 373px;
+  height: 141px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: -10px;
+}
+.nav-box .set-box2 .text-box a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.nav-box .set-box2 .text-box h3 {
+  font-family: Raleway;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 72px */
+  letter-spacing: 5px;
+}
+.nav-box .set-box2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.nav-box .set-box2 .n-box3 {
+  width: 350px;
+  height: 450px;
+  line-height: 450px;
+  text-align: center;
+  background: #1e1513;
+  transition: all 0.5s;
+}
+.nav-box .set-box2 .n-box3:hover {
+  background-color: #f00;
+}
+
+.play-box {
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+.play-box .youtube-wrap {
+  width: 100%;
+  height: 100%;
+  /* responsive youtube player */
+}
+.play-box .youtube-wrap .player {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.info {
+  margin-top: 200px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .info-box {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+.info h3 {
+  font-family: Noto Sans KR;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+  color: #f00;
+}
+.info p {
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #fff;
+}
+.info .info-icon {
+  gap: 76px;
+  color: #fff;
+  width: 641px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.info .info-icon a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.info .info-icon i::after {
+  content: "";
+  width: 11px;
+  height: 100px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+.info .info-icon i {
+  font-size: 64px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.info .info-icon i:hover {
+  color: #f00;
+}
+.info .info-icon span {
+  font-size: 18px;
+}
+
+.bnr {
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  height: 850px;
+  background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
+  background-position: center;
+  opacity: 80%;
+}
+
+.ocean-w {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.wave-w {
+  background: url(../../images/main/Lettering3.png) repeat-x;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 100;
+  top: 40%;
+  left: 0;
+  transform: translateX(-50px);
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+.Schedule {
+  margin: 130px 0;
+  width: 100%;
+  height: 633px;
+  background-color: #4e4e4e;
+}
+
+.notice {
+  margin: 0 360px;
+}
+.notice h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.bnr .bg {
+  position: relative;
+  margin-top: 100px;
+}
+.bnr .bg .bg img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.2;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrap {
+  width: 100%;
+  height: 1000vh;
+  background-color: #000;
+}
+
+.inner {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+}/*# sourceMappingURL=comm.css.map */
