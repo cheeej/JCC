@@ -93,6 +93,14 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+body {
+  background: #fdfdfd;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 
 input {

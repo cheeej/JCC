@@ -1,45 +1,53 @@
-var swiper = new Swiper(".slide-intro", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-// var swiper = new Swiper(".mySwiper", {
-//   loop: true,
-//   spaceBetween: 10,
+// var swiper = new Swiper(".slide-intro", {
 //   slidesPerView: 1,
-//   // slidesPerGroup: 1,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".mySwiper2", {
+//   spaceBetween: 30,
 //   loop: true,
-//   spaceBetween: 20,
-//   slidesPerView: 3,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
 //   navigation: {
 //     nextEl: ".swiper-button-next",
 //     prevEl: ".swiper-button-prev",
 //   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
 // });
 
-// var swiper2 = new Swiper2(".mySwiper2", {
-//   direction: "vertical",
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   mousewheel: true,
-//   pagination: {
-//     el: ".swiper-pagination2",
-//     clickable: true,
-//   },
-// });
+//Slick - Carousel Double
+$(document).ready(function () {
+  //Text Portion
+  var $status = $(".pagingInfo");
+  var $slickElement = $(".carousel-double--txt");
+
+  $slickElement.on(
+    "init reInit afterChange",
+    function (event, slick, currentSlide, nextSlide) {
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $status.text(i + "/" + slick.slideCount);
+    }
+  );
+
+  //Text Portion - Options
+  $slickElement.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".carousel-double--img",
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+  });
+
+  //Image Portion
+  $(".carousel-double--img").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: ".carousel-double--txt",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    nextArrow: ".carousel-double--next",
+    prevArrow: ".carousel-double--prev",
+  });
+});
