@@ -671,6 +671,7 @@ legend {
   width: 1440px;
 }
 .Accordion ul > li > a {
+  margin-bottom: 50px;
   position: relative;
   display: block;
   padding: 20px 80px 20px;
@@ -700,7 +701,7 @@ legend {
   justify-content: center;
 }
 .Accordion ul > li > ul > li {
-  padding: 50px 13px;
+  padding: 10px 10px;
 }
 .Accordion ul > li > ul > li > a {
   padding: 0;
@@ -757,7 +758,6 @@ body {
 }
 
 body {
-  background: #3b3b3b;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #ffffff;
@@ -776,10 +776,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-html {
-  background-color: #f3f3f3;
 }
 
 body {
@@ -893,7 +889,6 @@ body {
 }
 
 body {
-  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;

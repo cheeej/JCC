@@ -1,13 +1,13 @@
-*{
+* {
 	box-sizing: border-box;
 }
-img{
+img {
 	max-width: 100%;
 }
-html{
-	background-color: #f3f3f3;
+html {
+	// background-color: #f3f3f3;
 }
-body{
+body {
 	width: 90%;
 	margin: 2rem auto;
 }
@@ -15,28 +15,27 @@ body{
 $base-margin: 1rem;
 $bp-medium: 600px;
 
-
-.carousel-double{
+.carousel-double {
 	position: relative;
 	display: block;
 	width: 100%;
 	float: left;
-	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-	@media (min-width: $bp-medium){
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	@media (min-width: $bp-medium) {
 		box-shadow: none;
 	}
-	*:focus{
+	*:focus {
 		outline: 0;
 	}
 }
 .carousel-double--next,
-.carousel-double--prev{
+.carousel-double--prev {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 10;
 	user-select: none;
-	button{
+	button {
 		background: #ddd;
 		border: 0;
 		border-radius: 50%;
@@ -44,44 +43,45 @@ $bp-medium: 600px;
 		width: 2rem;
 		text-align: center;
 		vertical-align: middle;
-		box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-		&:hover, &:focus{
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+		&:hover,
+		&:focus {
 			outline: 0;
-			box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 		}
-		&:active{
+		&:active {
 			outline: 0;
-			box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 		}
 	}
 }
 
-.carousel-double--next{
+.carousel-double--next {
 	right: -$base-margin;
 }
-.carousel-double--prev{
+.carousel-double--prev {
 	left: -$base-margin;
 }
-.carousel-double--img-container{
+.carousel-double--img-container {
 	position: relative;
 	display: block;
 	width: 100%;
 	float: left;
-	@media (min-width: $bp-medium){
+	@media (min-width: $bp-medium) {
 		width: 50%;
-		box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 }
-.carousel-double--txt-container{
+.carousel-double--txt-container {
 	position: relative;
 	display: block;
 	width: 100%;
 	float: left;
 	padding: $base-margin;
 	background-color: #fff;
-	padding-bottom: $base-margin*3;
-	@media (min-width: $bp-medium){
-		box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+	padding-bottom: $base-margin * 3;
+	@media (min-width: $bp-medium) {
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 		width: calc(50% + 1rem);
 		margin-left: -1rem;
 		position: absolute;
@@ -91,12 +91,9 @@ $bp-medium: 600px;
 	}
 }
 
-.pagingInfo{
+.pagingInfo {
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
 	height: 1rem;
 }
-
-
-
