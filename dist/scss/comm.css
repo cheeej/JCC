@@ -88,14 +88,12 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -124,15 +122,21 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+body {
+  background: #fdfdfd;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="search"] {
+input[type=text], input[type=password], input[type=submit], input[type=search] {
   -webkit-appearance: none;
   border-radius: 0;
 }
-input:checked[type="checkbox"] {
+input:checked[type=checkbox] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -142,14 +146,11 @@ button {
   border-radius: 0;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="file"] {
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
   -webkit-appearance: button;
   border-radius: 0;
 }
-input[type="search"]::-webkit-search-cancel-button {
+input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -174,8 +175,7 @@ a {
   color: #333;
   text-decoration: none;
 }
-a:active,
-a:hover {
+a:active, a:hover {
   text-decoration: none;
 }
 
@@ -194,7 +194,7 @@ hr {
   display: none;
 }
 
-input[type="password"] {
+input[type=password] {
   font-family: "Malgun Gothic";
 }
 
@@ -312,7 +312,7 @@ legend {
   width: 100%;
   height: 800px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper {
@@ -340,7 +340,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .nav-box {
@@ -370,7 +370,9 @@ legend {
   color: #fff;
 }
 .nav-box .set-box a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -439,7 +441,9 @@ legend {
   letter-spacing: 5px;
 }
 .nav-box .set-box2 a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -552,7 +556,7 @@ legend {
   margin-top: 200px;
   width: 100%;
   height: 850px;
-  background: url(../../images/main/img-rent-concert.png) 0 0 / cover no-repeat;
+  background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
   background-position: center;
   opacity: 80%;
 }
@@ -598,7 +602,7 @@ legend {
   margin: 130px 0;
   width: 100%;
   height: 633px;
-  /* background-color: #4e4e4e; */
+  background-color: #4e4e4e;
 }
 
 .notice {
@@ -613,27 +617,264 @@ legend {
   position: relative;
 }
 
-.banner .back-banner {
-  position: relative;
+.bnr-img {
+  margin: 0 auto;
 }
-.banner .back-banner img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: contain;
-  object-fit: contain;
-  opacity: 0.2;
-}
-.banner .sub-bg {
+.bnr-img h2 {
   position: absolute;
+  top: 600px;
+  left: 120px;
   z-index: 1000;
-  top: 0;
-  right: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 120%;
+  color: #fff;
 }
-.banner .sub-bg img {
-  width: 832px;
+.bnr-img .back-banner img {
+  width: 100%;
   height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.9;
+  background-color: #000;
+}
+.bnr-img .black-box {
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  opacity: 0.5;
+  background-color: #000;
+}
+.bnr-img .sub-bg {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 250px;
+}
+.bnr-img .sub-bg img {
+  opacity: 0.9;
+  width: 600px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #000;
+}
+
+.Accordion {
+  margin: 100px auto;
+  width: 1440px;
+}
+.Accordion ul > li > a {
+  margin-bottom: 50px;
+  position: relative;
+  display: block;
+  padding: 20px 80px 20px;
+  background-color: #e3e3e3;
+  color: #000;
+  /* noto-m/h1-32 */
+  font-family: Noto Sans KR;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.Accordion ul > li > a:hover {
+  background-color: #b1b1b1;
+}
+.Accordion ul > li > a::before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-225deg);
+}
+.Accordion ul > li > ul {
+  display: none;
+  display: flex;
+  justify-content: center;
+}
+.Accordion ul > li > ul > li {
+  padding: 10px 10px;
+}
+.Accordion ul > li > ul > li > a {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 330px;
+  color: #000;
+  /* noto-b/body2-19 */
+  font-family: Noto Sans KR;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #d9d9d9;
+}
+.Accordion ul > li > ul > li > a::before {
+  display: none;
+}
+.Accordion ul > li > ul > li > a:hover {
+  background-color: #f00;
+  color: #fff;
+}
+.Accordion ul > li > ul > li > a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+.Accordion ul > li > ul > li > a img:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.carousel-double {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 600px) {
+  .carousel-double {
+    box-shadow: none;
+  }
+}
+.carousel-double *:focus {
+  outline: 0;
+}
+
+.carousel-double--next,
+.carousel-double--prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.carousel-double--next button,
+.carousel-double--prev button {
+  background: #ddd;
+  border: 0;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-double--next button:hover, .carousel-double--next button:focus,
+.carousel-double--prev button:hover,
+.carousel-double--prev button:focus {
+  outline: 0;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.carousel-double--next button:active,
+.carousel-double--prev button:active {
+  outline: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-double--next {
+  right: -1rem;
+}
+
+.carousel-double--prev {
+  left: -1rem;
+}
+
+.carousel-double--img-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+@media (min-width: 600px) {
+  .carousel-double--img-container {
+    width: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.carousel-double--txt-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  background-color: #fff;
+  padding-bottom: 3rem;
+}
+@media (min-width: 600px) {
+  .carousel-double--txt-container {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    width: calc(50% + 1rem);
+    margin-left: -1rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.pagingInfo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 1rem;
 }
 
 html,
@@ -644,7 +885,6 @@ body {
 }
 
 body {
-  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -665,4 +905,4 @@ body {
 
 .main {
   width: 100%;
-} /*# sourceMappingURL=comm.css.map */
+}/*# sourceMappingURL=comm.css.map */

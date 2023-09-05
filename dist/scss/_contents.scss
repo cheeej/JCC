@@ -65,10 +65,6 @@
   margin: 100px auto;
   width: 1440px;
 
-  ul {
-  }
-  ul > li {
-  }
   ul > li > a {
     margin-bottom: 50px;
     position: relative;
@@ -82,22 +78,27 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    &::before {
-      content: "";
-      width: 20px;
-      height: 3px;
-      background-color: #000;
-      position: absolute;
-      top: 50%;
-      left: 40px;
-
-      // transform: rotate(-225deg);
-    }
     &:hover {
       background-color: #b1b1b1;
     }
+    &::before {
+      content: "+";
+      font-size: 1.5em;
+      line-height: 0.5em;
+      float: left;
+      transition: transform 0.3s ease-in-out;
+      transform: rotate(-225deg);
+      // content: "";
+      // width: 20px;
+      // height: 3px;
+      // background-color: #000;
+      // position: absolute;
+      // top: 50%;
+      // left: 40px;
+    }
   }
   ul > li > ul {
+    display: none;
     display: flex;
     justify-content: center;
   }
@@ -143,6 +144,8 @@
     }
   }
 }
-.contain {
-  width: 1440px;
-}
+// .contain {
+//   width: 1440px;
+// }
+
+
