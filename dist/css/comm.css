@@ -768,8 +768,8 @@ legend {
 }
 .banner-img h2 {
   position: absolute;
-  top: 550px;
-  left: 120px;
+  top: 430px;
+  left: 170px;
   z-index: 1000;
   font-family: Raleway;
   font-size: 80px;
@@ -778,37 +778,201 @@ legend {
   line-height: 120%;
   color: #fff;
 }
-.banner-img P {
+.banner-img p {
+  display: inline-block;
   position: absolute;
-  top: 650px;
-  left: 120px;
-  z-index: 1000;
+  top: 540px;
+  left: 170px;
+  z-index: 1010;
   font-family: Raleway;
   font-size: 30px;
   font-style: normal;
   font-weight: 200;
-  letter-spacing: 13.5px;
   line-height: 120%;
   color: #fff;
+  letter-spacing: 8px;
 }
-.banner-img img {
+.banner-img .b-img {
+  background: url(../../images/goods/banner1.jpg) 50% 20%/cover no-repeat;
   width: 100%;
-  height: 800px;
+  height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.9;
-  background-color: #000;
+  opacity: 0.8;
 }
-.banner-img .black-box {
+.banner-img .black-b {
   display: block;
   z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
-  opacity: 0.3;
+  height: 700px;
+  opacity: 0.8;
   background-color: #000;
+}
+
+.button {
+  width: 752px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Noto Sans KR;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 42px */
+  letter-spacing: 17.5px;
+  background-color: #212121;
+}
+.button:hover {
+  background-color: #ff0000;
+}
+
+.title {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.title h3 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 62.4px */
+}
+.title p {
+  color: #646464;
+  /* noto/body-r-19 */
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 22.8px */
+}
+
+.information {
+  position: relative;
+}
+.information .box-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 750px;
+  height: 400px;
+  opacity: 0.4;
+  background: url(../../images/goods/box-img1.jpg) 0 0/cover no-repeat;
+}
+.information .b-box1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -100;
+  width: 750px;
+  height: 400px;
+  background-color: #000;
+}
+.information .b-box2 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  display: flex;
+  width: 1100px;
+  height: 950px;
+  background-color: #000;
+}
+.information .info-text {
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+.information .info-text .dapth-1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+.information .info-text .dapth-2 {
+  display: flex;
+  height: 113px;
+  align-items: flex-start;
+  gap: 74px;
+}
+.information .info-text .dapth-3 {
+  display: flex;
+  height: 55px;
+  align-items: flex-start;
+  gap: 68px;
+}
+.information .info-text strong {
+  font-family: Noto Sans KR;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.information .info-text .dapth1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+.information .info-text .dapth2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 120%;
+}
+.information .info-text .dapth2 .stretch {
+  line-height: 1.6;
+}
+.information .info-text .dapth2 .red-li {
+  display: inline-flex;
+  align-items: flex-start;
+}
+.information .info-text .dapth2 .redtext {
+  color: #f00;
+}
+.information .info-text .dapth2 .smalltext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
 }
 
 html,
