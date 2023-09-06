@@ -622,7 +622,7 @@ legend {
 }
 .bnr-img h2 {
   position: absolute;
-  top: 600px;
+  top: 430px;
   left: 120px;
   z-index: 1000;
   font-family: Raleway;
@@ -631,6 +631,20 @@ legend {
   font-weight: 200;
   line-height: 120%;
   color: #fff;
+}
+.bnr-img p {
+  display: inline-block;
+  position: absolute;
+  top: 540px;
+  left: 120px;
+  z-index: 1010;
+  font-family: Raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 120%;
+  color: #fff;
+  letter-spacing: 8px;
 }
 .bnr-img .back-banner img {
   width: 100%;
@@ -819,14 +833,14 @@ legend {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-family: Noto Sans KR;
   font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 42px */
   letter-spacing: 17.5px;
-  background-color: #c1c1c1;
+  background-color: #434343;
 }
 .button:hover {
   background-color: #ff0000;
