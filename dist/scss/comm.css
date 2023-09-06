@@ -684,6 +684,7 @@ legend {
   font-weight: 400;
   line-height: 120%;
 }
+<<<<<<< HEAD
 .Accordion ul > li > a::before {
   content: "";
   width: 20px;
@@ -697,6 +698,21 @@ legend {
   background-color: #b1b1b1;
 }
 .Accordion ul > li > ul {
+=======
+.Accordion ul > li > a:hover {
+  background-color: #b1b1b1;
+}
+.Accordion ul > li > a::before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-225deg);
+}
+.Accordion ul > li > ul {
+  display: none;
+>>>>>>> goods
   display: flex;
   justify-content: center;
 }
@@ -741,10 +757,13 @@ legend {
   color: #fff;
 }
 
+<<<<<<< HEAD
 .contain {
   width: 1440px;
 }
 
+=======
+>>>>>>> goods
 html,
 body {
   position: relative;
