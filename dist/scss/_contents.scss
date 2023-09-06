@@ -156,18 +156,18 @@
 .accordion {
   margin: 100px auto;
   width: 1440px;
-<<<<<<< HEAD
-
-  ul > li > a {
-=======
+  // .container {
+  //   width: 1440px;
+  // }
   .pp {
     margin: 80px 0;
+    padding: 20px 80px 20px;
   }
   .and {
->>>>>>> goods
     margin-bottom: 50px;
   }
-
+  .depth2 {
+  }
   // .depth2-1 {
   //   margin-top: 50px;
   // }
@@ -175,7 +175,7 @@
     // margin-bottom: 50px;
     position: relative;
     display: block;
-    padding: 20px 80px 20px;
+
     background-color: #a3a3a3;
     color: #000;
     /* noto-m/h1-32 */
