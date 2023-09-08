@@ -1,16 +1,7 @@
 $(function () {
-  $(".depth1").mouseover(function () {
-    $(this).find(".depth2").stop().slideDown();
+  $(".depth1 .pp").on("click", function () {
+    $(this).next(".depth2").stop().slideToggle();
   });
-  $(".depth1").mouseout(function () {
-    $(this).find(".depth2").stop().slideUp();
-  });
-  // $(".depth1").click(function () {
-  //   $(".depth2").show();
-  // });
-  // $(".depth1").click(function () {
-  //   $(".depth2").hide();
-  // });
 });
 
 var swiper = new Swiper(".mySwiper", {
