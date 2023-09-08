@@ -79,12 +79,23 @@
 .accordion {
   margin: 100px auto;
   width: 1440px;
-  // .container {
-  //   width: 1440px;
-  // }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    width: 100%;
+  }
+  .depth1 {
+    overflow: hidden;
+  }
   .pp {
+    display: block;
+    width: 100%;
     margin: 80px 0;
-    padding: 20px 80px 20px;
+    padding: 20px 90px 20px;
   }
   .and {
     margin-bottom: 50px;
@@ -150,20 +161,28 @@
     margin: 0 auto;
     overflow: hidden;
     display: none;
+    // display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   ul > li > ul > li {
     float: left;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 49%;
-    &:nth-child(odd) {
-      margin-right: 2%;
+    // &:nth-child(odd) {
+    //   margin-right: 2%;
+    // }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
     }
   }
+
   ul > li > ul > li > a {
     p {
       position: relative;
@@ -174,7 +193,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin: 7px;
+    margin: 7px;
     width: 100%;
     color: #000;
     font-family: Noto Sans KR;

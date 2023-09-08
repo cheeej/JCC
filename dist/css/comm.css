@@ -684,9 +684,23 @@ legend {
   margin: 100px auto;
   width: 1440px;
 }
+.accordion .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion ul {
+  width: 100%;
+}
+.accordion .depth1 {
+  overflow: hidden;
+}
 .accordion .pp {
+  display: block;
+  width: 100%;
   margin: 80px 0;
-  padding: 20px 80px 20px;
+  padding: 20px 90px 20px;
 }
 .accordion .and {
   margin-bottom: 50px;
@@ -747,13 +761,16 @@ legend {
   align-items: center;
   width: 49%;
 }
-.accordion ul > li > ul > li:nth-child(odd) {
-  margin-right: 2%;
+.accordion ul > li > ul > li::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .accordion ul > li > ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 7px;
   width: 100%;
   color: #000;
   font-family: Noto Sans KR;
