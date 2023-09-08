@@ -316,9 +316,8 @@ legend {
 }
 
 .swiper {
-  width: 1440px;
   height: 350px;
-  margin: 200px 470px;
+  margin: 200px 0 200px 470px;
 }
 
 .swiper-slide {
@@ -559,6 +558,7 @@ legend {
   background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
   background-position: center;
   opacity: 80%;
+  overflow: hidden;
 }
 
 .ocean-w {
@@ -692,18 +692,17 @@ legend {
 }
 .accordion ul {
   width: 100%;
+  margin-bottom: 70px;
 }
 .accordion .depth1 {
   overflow: hidden;
 }
 .accordion .pp {
+  transition: all 0.3s;
   display: block;
   width: 100%;
-  margin: 80px 0;
+  margin: 30px 0;
   padding: 20px 90px 20px;
-}
-.accordion .and {
-  margin-bottom: 50px;
 }
 .accordion ul > li > span {
   position: relative;
@@ -716,7 +715,7 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .accordion ul > li > span img {
   display: block;
@@ -729,14 +728,14 @@ legend {
 .accordion ul > li > span::before {
   content: "";
   transition: transform 0.3s ease-in-out;
-  transform: rotate(-225deg);
+  transform: rotate(180deg);
   content: "";
   width: 20px;
   height: 3px;
   background-color: #000;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: rotate(180deg);
   left: 40px;
 }
 .accordion ul > li > span::before:hover {
@@ -747,7 +746,7 @@ legend {
 }
 .accordion ul > li > ul {
   width: 95%;
-  margin: 0 auto;
+  margin: 70px auto;
   overflow: hidden;
   display: none;
   flex-wrap: wrap;
@@ -765,6 +764,10 @@ legend {
   content: "";
   clear: both;
   display: table;
+}
+.accordion ul > li > ul > li:hover a {
+  background-color: #920909;
+  color: #fff;
 }
 .accordion ul > li > ul > li > a {
   display: flex;
@@ -787,10 +790,6 @@ legend {
   display: block;
   width: 100%;
   padding-top: 100%;
-}
-.accordion ul > li > ul > li > a:hover {
-  background-color: #f00;
-  color: #fff;
 }
 .accordion ul > li > ul > li > a .txt {
   display: flex;
@@ -816,10 +815,6 @@ legend {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-}
-.accordion ul > li > ul > li > a img:hover {
-  background-color: #f00;
-  color: #fff;
 }
 
 #main {

@@ -87,25 +87,20 @@
   }
   ul {
     width: 100%;
+    margin-bottom: 70px;
+    // transition: all 0.3s;
   }
   .depth1 {
     overflow: hidden;
   }
   .pp {
+    transition: all 0.3s;
     display: block;
     width: 100%;
-    margin: 80px 0;
+    margin: 30px 0;
     padding: 20px 90px 20px;
   }
-  .and {
-    margin-bottom: 50px;
-  }
-  // .depth2-1 {
-  //   margin-top: 50px;
-  // }
   ul > li > span {
-    // width: 100%;
-    // margin-bottom: 50px;
     position: relative;
     display: block;
 
@@ -117,7 +112,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    transition: background-color 0.8s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     img {
       display: block;
       width: 100%;
@@ -128,22 +123,27 @@
     }
     &::before {
       content: "";
-      // font-size: 1.5em;
-      // line-height: 0.5em;
       transition: transform 0.3s ease-in-out;
-      transform: rotate(-225deg);
+      transform: rotate(180deg);
       content: "";
       width: 20px;
       height: 3px;
       background-color: #000;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
       left: 40px;
       &:hover {
         background-color: #fff;
       }
+      // &:hover {
+      //   transform-origin: center;
+      //   background-color: #fff;
+      //   transform: translateY(-50%) rotate(-90deg); /* 호버 시 -45도 회전 */
+      // }
     }
+
     // ul > li > a.Active,
     // ul > li > a.is-expanded {
     //   &:before {
@@ -158,7 +158,7 @@
   }
   ul > li > ul {
     width: 95%;
-    margin: 0 auto;
+    margin: 70px auto;
     overflow: hidden;
     display: none;
     // display: flex;
@@ -168,18 +168,21 @@
   }
   ul > li > ul > li {
     float: left;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 49%;
     // &:nth-child(odd) {
-    //   margin-right: 2%;
+    //   margin-right: 40px 0;
     // }
     &::after {
       content: "";
       clear: both;
       display: table;
+    }
+    &:hover a {
+      background-color: #920909;
+      color: #fff;
     }
   }
 
@@ -204,10 +207,6 @@
     font-weight: 400;
     line-height: 150%;
     background-color: #d9d9d9;
-    &:hover {
-      background-color: #f00;
-      color: #fff;
-    }
     .txt {
       display: flex;
       justify-content: center;
@@ -226,10 +225,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      &:hover {
-        background-color: #f00;
-        color: #fff;
-      }
+      // &:hover {
+      //   background-color: #f00;
+      //   color: #fff;
+      // }
       display: block;
       width: 100%;
       height: 100%;

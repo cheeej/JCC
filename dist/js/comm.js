@@ -1,6 +1,6 @@
 $(function () {
   $(".depth1 .pp").on("click", function () {
-    $(this).next(".depth2").stop().slideToggle();
+    $(this).next(".depth2").stop().slideToggle(500);
   });
 });
 
