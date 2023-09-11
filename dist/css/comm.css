@@ -795,11 +795,6 @@ legend {
   width: 100%;
   padding-top: 100%;
 }
-.accordion ul > li > ul > li > a p:after {
-  width: 600px;
-  height: 800px;
-  background-color: #000;
-}
 .accordion ul > li > ul > li > a .txt {
   display: flex;
   justify-content: center;
@@ -826,10 +821,14 @@ legend {
   object-fit: cover;
   opacity: 0.8;
 }
-.accordion ul > li > ul > li > a img:after {
-  width: 600px;
-  height: 800px;
-  background-color: #000;
+.accordion .thumb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #main {

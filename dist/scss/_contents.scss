@@ -197,11 +197,6 @@
       display: block;
       width: 100%;
       padding-top: 100%;
-      &:after {
-        width: 600px;
-        height: 800px;
-        background-color: #000;
-      }
     }
     display: flex;
     justify-content: center;
@@ -245,11 +240,17 @@
       height: 100%;
       object-fit: cover;
       opacity: 0.8;
-      &:after {
-        width: 600px;
-        height: 800px;
-        background-color: #000;
-      }
+    }
+  }
+  .thumb {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 320px;
+      background-color: rgba($b, 0.1);
     }
   }
 }
