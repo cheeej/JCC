@@ -116,6 +116,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -100;
+    justify-content: center;
     width: 750px;
     height: 400px;
     background-color: #000;
@@ -131,109 +132,299 @@
     height: 950px;
     background-color: #000;
   }
-  .info-text {
-    position: absolute;
-    top: 520px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    display: inline-flex;
-    flex-direction: column;
+}
+.info-text {
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  .dapth1 {
+    display: flex;
     align-items: flex-start;
-    gap: 26px;
-    .dapth-1 {
-      display: flex;
+    gap: 70px;
+    width: 100%;
+  }
+  .dapth2 {
+    display: flex;
+    width: 100%;
+    height: 113px;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  // .dapth2:nth-child(3) {
+  //   padding-right: -100px;
+  // }
+  .dapth3 {
+    display: flex;
+    width: 100%;
+    height: 57px;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  strong {
+    font-family: Noto Sans KR;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .dapth-1 {
+    display: flex;
+    width: 100px;
+    height: 26px;
+    gap: 14px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    font-family: Noto Sans KR;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 26.4px */
+  }
+  .dapth-2 {
+    display: flex;
+    width: 110px;
+    height: 198px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 13px;
+    font-family: Noto Sans KR;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+  }
+  .dapth-3 {
+    display: flex;
+    width: 254px;
+    height: 218px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 120%;
+    .stretch {
+      line-height: 1.6;
+    }
+    .red-li {
+      display: inline-flex;
       align-items: flex-start;
-      gap: 60px;
-      width: 100%;
     }
-    .dapth-2 {
+    .redtext {
+      color: #f00;
+    }
+    .smalltext {
       display: flex;
-      width: 100%;
-      height: 113px;
-      align-items: flex-start;
-      gap: 74px;
-    }
-    .dapth-3 {
-      display: flex;
-      width: 100%;
-      height: 55px;
-      align-items: flex-start;
-      gap: 68px;
-    }
-    strong {
-      font-family: Noto Sans KR;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%;
-    }
-    .depth1 {
-      display: flex;
-      width: 91px;
-      height: 26px;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      gap: 6px;
       font-family: Noto Sans KR;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%; /* 26.4px */
-    }
-    .dapth2 {
-      display: flex;
-      width: 78px;
-      height: 198px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 13px;
-      font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 300;
       line-height: 120%;
     }
-    .dapth22 {
-      width: 53px;
-      height: 23px;
-    }
-    .dapth3 {
+  }
+}
+.program {
+  position: relative;
+  top: 1170px;
+  left: 0;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  h3 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  p {
+    font-family: Noto Sans KR;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0 80px 0;
+  }
+  .performance {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: 80px;
+
+    .dapth1 {
       display: flex;
-      width: 254px;
-      height: 218px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 16px;
-      font-family: Noto Sans KR;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: 120%;
-      .stretch {
-        line-height: 1.6;
-      }
-      .red-li {
-        display: inline-flex;
-        align-items: flex-start;
-      }
-      .redtext {
-        color: #f00;
-      }
-      .smalltext {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 6px;
-        font-family: Noto Sans KR;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 120%;
-      }
+      align-items: center;
+      justify-content: start;
+      width: 100%;
+      padding-bottom: 20px;
     }
+    .dapth1-1 {
+      width: 250px;
+      display: flex;
+      padding-right: 50px;
+      font-family: Noto Sans KR;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+    .dapth1-2 {
+      // width: 552px;
+      display: flex;
+      font-family: Noto Sans KR;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      gap: 10px;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      font-family: Noto Sans KR;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      padding: 30px 0 40px;
+    }
+    .dapth2 {
+      display: flex;
+      justify-content: start;
+      padding: 20px 0 10px;
+    }
+    .dapth2-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      font-family: Noto Sans KR;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      gap: 20px;
+    }
+    .dapth2-2 {
+      display: flex;
+      font-family: Noto Sans KR;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      gap: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+.profile {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // gap: 35px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 150px;
+
+  .name-box {
+    position: absolute;
+    top: 1200px;
+    left: 10%;
+    padding: 338px 60px;
+    text-align: center;
+    background-color: #000;
+    h3 {
+      color: #fff;
+      text-align: center;
+      font-family: Raleway;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+    }
+    p {
+      font-family: Noto Sans KR;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      color: #fff;
+    }
+  }
+  .swiper {
+    display: block;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 937px;
+    height: 730px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .img-text {
+    text-align: center;
+  }
+  .img-name {
+    font-family: Noto Sans KR;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 20px;
+  }
+  .txt {
+    display: block;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    padding: 0 20px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 381px;
+
+    object-fit: cover;
   }
 }

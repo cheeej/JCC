@@ -952,6 +952,7 @@ legend {
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+  justify-content: center;
   width: 750px;
   height: 400px;
   background-color: #000;
@@ -967,7 +968,8 @@ legend {
   height: 950px;
   background-color: #000;
 }
-.information .info-text {
+
+.info-text {
   position: absolute;
   top: 520px;
   left: 50%;
@@ -975,42 +977,43 @@ legend {
   color: #fff;
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 26px;
 }
-.information .info-text .dapth-1 {
+.info-text .dapth1 {
   display: flex;
   align-items: flex-start;
-  gap: 60px;
+  gap: 70px;
   width: 100%;
 }
-.information .info-text .dapth-2 {
+.info-text .dapth2 {
   display: flex;
   width: 100%;
   height: 113px;
   align-items: flex-start;
-  gap: 74px;
+  gap: 70px;
 }
-.information .info-text .dapth-3 {
+.info-text .dapth3 {
   display: flex;
   width: 100%;
-  height: 55px;
+  height: 57px;
   align-items: flex-start;
-  gap: 68px;
+  gap: 70px;
 }
-.information .info-text strong {
+.info-text strong {
   font-family: Noto Sans KR;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
 }
-.information .info-text .depth1 {
+.info-text .dapth-1 {
   display: flex;
-  width: 91px;
+  width: 100px;
   height: 26px;
+  gap: 14px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
   font-family: Noto Sans KR;
   font-size: 22px;
@@ -1018,12 +1021,12 @@ legend {
   font-weight: 400;
   line-height: 120%; /* 26.4px */
 }
-.information .info-text .dapth2 {
+.info-text .dapth-2 {
   display: flex;
-  width: 78px;
+  width: 110px;
   height: 198px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
   gap: 13px;
   font-family: Noto Sans KR;
@@ -1032,16 +1035,12 @@ legend {
   font-weight: 300;
   line-height: 120%;
 }
-.information .info-text .dapth22 {
-  width: 53px;
-  height: 23px;
-}
-.information .info-text .dapth3 {
+.info-text .dapth-3 {
   display: flex;
   width: 254px;
   height: 218px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
   gap: 16px;
   font-family: Noto Sans KR;
@@ -1050,17 +1049,17 @@ legend {
   font-weight: 200;
   line-height: 120%;
 }
-.information .info-text .dapth3 .stretch {
+.info-text .dapth-3 .stretch {
   line-height: 1.6;
 }
-.information .info-text .dapth3 .red-li {
+.info-text .dapth-3 .red-li {
   display: inline-flex;
   align-items: flex-start;
 }
-.information .info-text .dapth3 .redtext {
+.info-text .dapth-3 .redtext {
   color: #f00;
 }
-.information .info-text .dapth3 .smalltext {
+.info-text .dapth-3 .smalltext {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1071,6 +1070,190 @@ legend {
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
+}
+
+.program {
+  position: relative;
+  top: 1170px;
+  left: 0;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.program h3 {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.program p {
+  font-family: Noto Sans KR;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.program .line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  margin: 20px 0 80px 0;
+}
+.program .performance {
+  margin-bottom: 80px;
+}
+.program .performance .dapth1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.program .performance .dapth1-1 {
+  width: 250px;
+  display: flex;
+  padding-right: 50px;
+  font-family: Noto Sans KR;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.program .performance .dapth1-2 {
+  display: flex;
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  gap: 10px;
+}
+.program .performance p {
+  display: flex;
+  justify-content: center;
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 30px 0 40px;
+}
+.program .performance .dapth2 {
+  display: flex;
+  justify-content: start;
+  padding: 20px 0 10px;
+}
+.program .performance .dapth2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  gap: 20px;
+}
+.program .performance .dapth2-2 {
+  display: flex;
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.profile {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 150px;
+}
+.profile .name-box {
+  position: absolute;
+  top: 1200px;
+  left: 10%;
+  padding: 338px 60px;
+  text-align: center;
+  background-color: #000;
+}
+.profile .name-box h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.profile .name-box p {
+  font-family: Noto Sans KR;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #fff;
+}
+.profile .swiper {
+  display: block;
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  width: 937px;
+  height: 730px;
+}
+.profile .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #c2c2c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.profile .img-text {
+  text-align: center;
+}
+.profile .img-name {
+  font-family: Noto Sans KR;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px 20px;
+}
+.profile .txt {
+  display: block;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0 20px;
+}
+.profile .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 381px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 html,
