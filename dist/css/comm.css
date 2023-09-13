@@ -316,9 +316,8 @@ legend {
 }
 
 .swiper {
-  width: 1440px;
   height: 350px;
-  margin: 200px 470px;
+  margin: 200px 0 200px 470px;
 }
 
 .swiper-slide {
@@ -559,6 +558,7 @@ legend {
   background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
   background-position: center;
   opacity: 80%;
+  overflow: hidden;
 }
 
 .ocean-w {
@@ -684,14 +684,27 @@ legend {
   margin: 100px auto;
   width: 1440px;
 }
+.accordion .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion ul {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.accordion .depth1 {
+  overflow: hidden;
+}
 .accordion .pp {
-  margin: 80px 0;
-  padding: 20px 80px 20px;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+  padding: 20px 90px 20px;
 }
-.accordion .and {
-  margin-bottom: 50px;
-}
-.accordion ul > li > a {
+.accordion ul > li > span {
   position: relative;
   display: block;
   background-color: #a3a3a3;
@@ -702,47 +715,66 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
-.accordion ul > li > a:hover {
+.accordion ul > li > span img {
+  display: block;
+  width: 100%;
+}
+.accordion ul > li > span:hover {
   background-color: #494949;
   color: #fff;
 }
-.accordion ul > li > a::before {
-  content: "+";
-  font-size: 1.5em;
-  line-height: 0.5em;
+.accordion ul > li > span::before {
+  content: "";
   transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #000;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: rotate(180deg);
   left: 40px;
 }
+.accordion ul > li > span::before:hover {
+  background-color: #fff;
+}
+.accordion ul > li:first-child .depth2 {
+  display: block;
+}
 .accordion ul > li > ul {
-  display: flex;
+  width: 95%;
+  margin: 70px auto;
+  overflow: hidden;
+  display: none;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .accordion ul > li > ul > li {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+}
+.accordion ul > li > ul > li::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.accordion ul > li > ul > li:hover a {
+  background-color: #920909;
+  color: #fff;
+}
+.accordion ul > li > ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 7px;
-}
-.accordion ul > li > ul > li > ul {
-  display: flex;
-  justify-content: center;
+  margin: 7px;
   width: 100%;
-}
-.accordion ul > li > ul > li > ul > a::before {
-  display: none;
-}
-.accordion ul > li > ul > li > ul > li > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 330px;
-  height: 330px;
   color: #000;
   font-family: Noto Sans KR;
   text-align: center;
@@ -753,24 +785,36 @@ legend {
   line-height: 150%;
   background-color: #d9d9d9;
 }
-.accordion ul > li > ul > li > ul > li > a::before {
-  display: none;
-}
-.accordion ul > li > ul > li > ul > li > a:hover {
-  background-color: #f00;
-  color: #fff;
-}
-.accordion ul > li > ul > li > ul > li > a img {
+.accordion ul > li > ul > li > a p {
+  position: relative;
   display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+.accordion ul > li > ul > li > a .txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.accordion ul > li > ul > li > a img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0.8;
-}
-.accordion ul > li > ul > li > ul > li > a img:hover {
-  background-color: #f00;
-  color: #fff;
 }
 
 #main {
@@ -841,6 +885,8 @@ legend {
   line-height: 120%; /* 42px */
   letter-spacing: 17.5px;
   background-color: #212121;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #ff0000;

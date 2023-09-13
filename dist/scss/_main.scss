@@ -38,9 +38,9 @@
 
 // 첫번째 스와이퍼
 .swiper {
-  width: 1440px;
+  // width: 1440px;
   height: 350px;
-  margin: 200px 470px;
+  margin: 200px 0 200px 470px;
   // overflow: hidden;
 }
 // .swiper::before {
@@ -314,7 +314,7 @@
   background: url(../../images/main/img-rent-concert.png) 0 0 / cover no-repeat;
   background-position: center;
   opacity: 80%;
-  // overflow: hidden;
+  overflow: hidden;
 }
 .ocean-w {
   overflow: hidden;
