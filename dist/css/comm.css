@@ -156,7 +156,8 @@ input[type=search]::-webkit-search-cancel-button {
 
 /* 기본 폰트 설정 */
 /* mobile */
-body {
+body,
+html {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
@@ -164,12 +165,6 @@ body {
   color: #111;
 }
 
-/* desktop */
-@media screen and (min-width: 1280px) {
-  body {
-    font-size: 16px;
-  }
-}
 /* color값은 디자인가이드에 맞게사용 */
 a {
   color: #333;
@@ -315,12 +310,11 @@ legend {
      object-fit: cover;
 }
 
-.swiper {
+.slide-intro {
   height: 350px;
   margin: 200px 0 200px 470px;
 }
-
-.swiper-slide {
+.slide-intro .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -328,13 +322,12 @@ legend {
   justify-content: center;
   align-items: center;
 }
-.swiper-slide a {
+.slide-intro .swiper-slide a {
   display: block;
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide img {
+.slide-intro .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -471,10 +464,8 @@ legend {
   /* responsive youtube player */
 }
 .play-box .youtube-wrap .player {
-  position: absolute;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 900px;
   background: #000;
 }
 
@@ -932,37 +923,39 @@ legend {
   line-height: 120%; /* 22.8px */
 }
 
-.information {
-  position: relative;
+.information .cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 994px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #000;
 }
 .information .box-img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+  position: relative;
   width: 750px;
   height: 400px;
-  opacity: 0.4;
+  margin: 0 auto;
   background: url(../../images/goods/box-img1.jpg) 0 0/cover no-repeat;
+  transform: translateY(-100px);
 }
-.information .b-box1 {
+.information .box-img::after {
+  content: "";
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.information .b-box1 {
   justify-content: center;
   width: 750px;
   height: 400px;
   background-color: #000;
 }
 .information .b-box2 {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1000;
   display: flex;
   width: 1100px;
   height: 950px;
@@ -970,10 +963,6 @@ legend {
 }
 
 .info-text {
-  position: absolute;
-  top: 520px;
-  left: 50%;
-  transform: translateX(-50%);
   color: #fff;
   display: inline-flex;
   flex-direction: column;
@@ -1074,14 +1063,13 @@ legend {
 
 .program {
   position: relative;
-  top: 1170px;
-  left: 0;
   display: inline-flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-top: 100px;
 }
 .program h3 {
   text-align: center;
@@ -1092,6 +1080,7 @@ legend {
   line-height: 120%;
 }
 .program p {
+  text-align: center;
   font-family: Noto Sans KR;
   font-size: 22px;
   font-style: normal;
@@ -1103,7 +1092,7 @@ legend {
   width: 24px;
   height: 2px;
   background-color: #000;
-  margin: 20px 0 80px 0;
+  margin: 20px auto 80px;
 }
 .program .performance {
   margin-bottom: 80px;
@@ -1174,20 +1163,21 @@ legend {
 
 .profile {
   width: 100%;
-  height: 800px;
+  padding-bottom: 150px;
+}
+.profile .inner {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-bottom: 150px;
+  justify-content: space-between;
 }
 .profile .name-box {
-  position: absolute;
-  top: 1200px;
-  left: 10%;
-  padding: 338px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 730px;
   text-align: center;
   background-color: #000;
 }
@@ -1210,13 +1200,12 @@ legend {
 }
 .profile .swiper {
   display: block;
-  position: absolute;
-  top: 1000px;
-  left: 0;
-  width: 937px;
+  width: calc(80% - 30px);
   height: 730px;
+  margin: 0;
 }
 .profile .swiper-slide {
+  height: 730px;
   text-align: center;
   font-size: 18px;
   background: #c2c2c2;
@@ -1241,12 +1230,12 @@ legend {
 .profile .txt {
   display: block;
   text-align: center;
-  font-family: Noto Sans KR;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
-  padding: 0 20px;
+  padding: 0 15px;
+  letter-spacing: 0.03em;
 }
 .profile .swiper-slide img {
   display: block;
@@ -1263,14 +1252,6 @@ body {
   height: 100vh;
 }
 
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .wrap {
   width: 100%;
   height: 1000vh;
@@ -1278,7 +1259,7 @@ body {
 }
 
 .inner {
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
