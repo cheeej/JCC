@@ -38,7 +38,7 @@ $(function () {
 });
 
 var swiper = new Swiper(".slide-intro", {
-  slidesPerView: 2.5,
+  slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
