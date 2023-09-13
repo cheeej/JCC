@@ -37,11 +37,30 @@
 // slider
 
 // 첫번째 스와이퍼
-.swiper {
+.slide-intro {
   // width: 1440px;
   height: 350px;
   margin: 200px 0 200px 470px;
   // overflow: hidden;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 // .swiper::before {
 //   content: "";
@@ -49,26 +68,6 @@
 //   height: 350px;
 //   color: #000;
 // }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 //  nav
 .nav-box {
@@ -210,10 +209,8 @@
     /* responsive youtube player */
 
     .player {
-      position: absolute;
-      left: 0;
       width: 100%;
-      height: 100%;
+      height: 900px;
       background: #000;
     }
   }
@@ -363,7 +360,7 @@
 
 // notice
 .notice {
-  margin: 0 360px;
+  margin: 0 200px;
   h2 {
     color: #fff;
     font-size: 50px;
