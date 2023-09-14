@@ -42,7 +42,7 @@
   color: #ffffff;
   position: relative;
   text-align: center;
-  margin: 50px auto 0;
+  margin: 0 auto;
 
   .set-box {
     position: absolute;
@@ -160,10 +160,11 @@
   }
 }
 .play-box {
-  margin-top: 90px;
+  // margin-top: 90px;
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 728px;
+  margin: 150px auto;
   //   16:9 비율 = 100 : 56.25%
   // padding-bottom: 56.25%;
   .youtube-wrap {
@@ -176,13 +177,13 @@
 
     .player {
       width: 100%;
-      height: 900px;
+      height: 728px;
       background: $b;
     }
   }
 }
 .info {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
   height: 207px;
   position: relative;
@@ -366,7 +367,7 @@
   max-height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 200px auto;
+  margin: 200px auto 150px;
   background-color: #888888;
 }
 

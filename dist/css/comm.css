@@ -315,7 +315,7 @@ legend {
   color: #ffffff;
   position: relative;
   text-align: center;
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 .nav-box .set-box {
   position: absolute;
@@ -427,10 +427,10 @@ legend {
 }
 
 .play-box {
-  margin-top: 90px;
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 728px;
+  margin: 150px auto;
 }
 .play-box .youtube-wrap {
   width: 100%;
@@ -439,12 +439,12 @@ legend {
 }
 .play-box .youtube-wrap .player {
   width: 100%;
-  height: 900px;
+  height: 728px;
   background: #000;
 }
 
 .info {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
   height: 207px;
   position: relative;
@@ -590,7 +590,7 @@ legend {
   max-height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 200px auto;
+  margin: 200px auto 150px;
   background-color: #888888;
 }
 
