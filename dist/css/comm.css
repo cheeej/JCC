@@ -317,7 +317,7 @@ legend {
   max-height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 200px auto 150px;
+  margin: 200px auto 180px;
   background-color: #888888;
 }
 
@@ -350,18 +350,18 @@ legend {
   left: 0;
   margin: auto;
   padding: 0 40px;
-  width: 40%;
+  width: 50%;
 }
 
 .carousel-item__image {
-  width: 60%;
+  width: 50%;
   height: 100%;
   order: 2;
   align-self: flex-end;
-  flex-basis: 60%;
+  flex-basis: 40%;
   -webkit-order: 2;
   -webkit-align-self: flex-end;
-  -webkit-flex-basis: 60%;
+  -webkit-flex-basis: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +387,7 @@ legend {
 .carousel-item__title {
   margin: 20px 0 0 0;
   font-family: "Playfair Display", serif;
-  font-size: 46px;
+  font-size: 43px;
   line-height: 45px;
   letter-spacing: 3px;
   font-weight: 700;
@@ -455,14 +455,14 @@ legend {
 }
 .carousel .carousel__nav {
   position: absolute;
-  left: 25px;
+  left: 13px;
   z-index: 2;
   bottom: 0;
 }
 .carousel .carousel__icon {
   display: inline-block;
   vertical-align: middle;
-  width: 16px;
+  width: 42px;
   fill: #fff;
 }
 .carousel .carousel__arrow {
@@ -477,7 +477,7 @@ legend {
   position: absolute;
   width: 1px;
   background-color: #b0b0b0;
-  height: 14px;
+  height: 16px;
   top: 50%;
   margin-top: -7px;
 }
@@ -621,7 +621,7 @@ legend {
   position: relative;
   width: 100%;
   height: 728px;
-  margin: 150px auto;
+  margin: 180px auto;
 }
 .play-box .youtube-wrap {
   width: 100%;
@@ -711,10 +711,10 @@ legend {
   position: relative;
   margin-top: 200px;
   width: 100%;
-  height: 850px;
+  height: 700px;
   background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
   background-position: center;
-  opacity: 80%;
+  opacity: 78%;
   overflow: hidden;
 }
 
@@ -736,7 +736,7 @@ legend {
 .wave-w {
   background: url(../../images/main/Lettering3.png) repeat-x;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: 100;
   top: 40%;
   left: 0;
@@ -767,34 +767,62 @@ legend {
 .widget .inner .calender__days {
   display: inline-block;
   width: 100%;
-  height: 248.4285714286px;
+  height: 246px;
   box-sizing: border-box;
-  padding: 30px 37.5px;
+  padding: 35px 57px;
+}
+
+.widget .inner .schedule .schedule__formWrapper .schedule__form {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  display: inline-block;
+  background-color: #3d3d3d;
+  box-shadow: 0 4px 4px hwb(0 20% 80%/0.5);
+}
+
+.widget .inner .schedule .schedule__add {
+  transition-duration: 0.5s;
+  position: absolute;
+  right: 18.75px;
+  bottom: -62px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: calc((30px - 1.2rem) / 2);
+  text-align: center;
+  background-color: #3d3d3d;
 }
 
 .widget .schedule .schedule__title--text {
-  color: hsl(0, 0%, 20%);
+  color: #333333;
   position: relative;
   margin: 0;
   width: 100%;
-  font-family: Lato, sans-serif;
-  top: 140px;
-  left: 50px;
-  transform: translateX(50%);
+  top: 170px;
+  left: 255px;
   font-weight: 700;
   font-size: 1.2rem;
-  transform: translateY(-50%);
 }
 
-.widget .schedule .schedule__title--date {
-  color: hsla(0, 0%, 20%, 0.5);
+.widget .schedule .schedule__title .schedule__title--date {
+  color: rgba(51, 51, 51, 0.5019607843);
+  width: 100% !important;
+  height: 20px;
   position: absolute;
   margin: 0;
-  top: 160px;
-  left: 70px;
+  top: 195px;
+  left: 250px;
   bottom: 0;
   font-size: 14px;
-  font-family: Lato, sans-serif;
+  font-weight: 500;
 }
 
 html {
@@ -810,12 +838,11 @@ body {
 }
 
 .widget {
-  box-shadow: 0 4px 4px hsla(0, 0%, 20%, 0.5);
   position: relative;
   display: block;
   width: 100%;
-  height: 800px;
-  margin: 150px auto;
+  height: 400px;
+  margin: 200px auto;
   font-size: 0;
 }
 .widget .calender {
@@ -922,7 +949,7 @@ body {
   width: 50%;
   height: 400px;
   box-sizing: border-box;
-  background: #d9d9d9;
+  background: #7c7c7c;
 }
 .widget .schedule__title {
   width: 300px;
@@ -1062,9 +1089,6 @@ body {
   font-size: 0.7rem;
 }
 
-.notice {
-  margin: 0 200px;
-}
 .notice h2 {
   color: #fff;
   font-size: 50px;
