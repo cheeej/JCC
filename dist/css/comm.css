@@ -302,11 +302,17 @@ legend {
   display: block;
 }
 
+.banner a {
+  display: block;
+  width: 100%;
+}
+
 .banner img {
   width: 100%;
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
+  background: url(../../images/main/main.png) no-repeat 0 0;
 }
 
 .carousel {
@@ -949,7 +955,7 @@ body {
   width: 50%;
   height: 400px;
   box-sizing: border-box;
-  background: #7c7c7c;
+  background: #9b9b9b;
 }
 .widget .schedule__title {
   width: 300px;
@@ -1089,9 +1095,34 @@ body {
   font-size: 0.7rem;
 }
 
+.notice {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
 .notice h2 {
   color: #fff;
   font-size: 50px;
+  margin-bottom: 50px;
+}
+.notice h2 ::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 5px;
+  background: #fff;
+}
+.notice h3 {
+  color: #fff;
+  font-size: 32px;
+  padding: 15px 0;
+}
+.notice p {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
 }
 
 #main {

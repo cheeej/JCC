@@ -26,11 +26,17 @@
   // height: 0;
   // padding-top: 100%;
 }
+.banner a {
+  display: block;
+  width: 100%;
+  // height: 800px;
+}
 .banner img {
   width: 100%;
   // max-width: 1440px;
   height: 800px;
   object-fit: cover;
+  background: url(../../images/main/main.png) no-repeat 0 0;
 }
 
 // calousel
@@ -783,7 +789,7 @@ body {
     height: 400px;
     box-sizing: border-box;
     // padding: $side/8;
-    background: #7c7c7c;
+    background: #9b9b9b;
     @include e("title") {
       width: $side;
       height: $side/8 + ($side - $side/4)/14;
@@ -954,9 +960,61 @@ body {
 
 // notice
 .notice {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+
+  position: relative;
+
   h2 {
     color: #fff;
     font-size: 50px;
+    margin-bottom: 50px;
     // margin-left: 360px;
+    ::after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 1280px;
+      height: 5px;
+      background: #fff;
+    }
+  }
+  // .scroll-indicator {
+  //   position: fixed;
+  //   right: 20px;
+  //   top: 0;
+  //   bottom: 50px;
+  //   width: 1px;
+  //   :before {
+  //     content: "";
+  //     position: fixed;
+  //     right: 20px;
+  //     top: 0;
+  //     bottom: 0;
+  //     width: 1px;
+  //     // height: 800px;
+  //     background: rgb(255, 255, 255);
+  //   }
+  // }
+  // .indicator {
+  //   top: 0;
+  //   left: -5px;
+  //   width: 10px;
+  //   height: 50px;
+  //   border-radius: 5px;
+  //   background: red;
+  //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  //   overflow: hidden;
+  // }
+  h3 {
+    color: #fff;
+    font-size: 32px;
+    padding: 15px 0;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
   }
 }
