@@ -218,8 +218,11 @@
     .stretch {
       line-height: 1.6;
     }
+    .txt {
+      padding-bottom: 15px;
+    }
     .red-li {
-      display: inline-flex;
+      // display: block;
       align-items: flex-start;
     }
     .redtext {
@@ -230,12 +233,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: 6px;
+      gap: 8px;
       font-family: Noto Sans KR;
       font-size: 12px;
       font-style: normal;
       font-weight: 300;
       line-height: 120%;
+      color: #c1c1c1;
     }
   }
 }

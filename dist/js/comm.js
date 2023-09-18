@@ -41,14 +41,14 @@ $(function () {
   }
 });
 
-var swiper = new Swiper(".slide-goods", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiper = new Swiper(".slide-goods", {
+//   slidesPerView: 4,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
 // calender
 var date = new Date();
@@ -233,4 +233,14 @@ function togContent(elem, pos) {
       if (callNow) func.apply(context, args);
     };
   }
+
+  // var sswiper = new Swiper(".scroll-Swiper", {
+  //   direction: "vertical",
+  //   slidesPerView: "auto",
+  //   freeMode: true,
+  //   scrollbar: {
+  //     el: ".swiper-scrollbar",
+  //   },
+  //   mousewheel: true,
+  // });
 })();
