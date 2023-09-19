@@ -41,6 +41,7 @@ $(function () {
   }
 });
 
+// goods slide
 var swiper = new Swiper(".slide-goods", {
   slidesPerView: 4,
   spaceBetween: 30,

@@ -84,12 +84,12 @@
   order: 1;
   left: 0;
   margin: auto;
-  padding: 0 40px;
-  width: 50%;
+  padding: 0 40px 0 0;
+  width: 40%;
 }
 
 .carousel-item__image {
-  width: 50%;
+  width: 60%;
   height: 100%;
   order: 2;
   align-self: flex-end;
@@ -97,7 +97,7 @@
 
   -webkit-order: 2;
   -webkit-align-self: flex-end;
-  -webkit-flex-basis: 50%;
+  -webkit-flex-basis: 60%;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -193,11 +193,16 @@
 
   .carousel__nav {
     position: absolute;
-    left: 13px;
+    left: -30px;
     z-index: 2;
     // background-color: #5d5d5d;
     bottom: 0;
   }
+  // @media screen and (max-width: 1440px) {
+  //   .carousel__nav {
+  //     left: -30px;
+  //   }
+  // }
 
   .carousel__icon {
     display: inline-block;
@@ -243,6 +248,11 @@
   .active .carousel-item__image {
     transition: 0.6s all ease-in-out;
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .carousel {
+    max-width: 1280px;
   }
 }
 //  nav
@@ -376,7 +386,7 @@
   // margin-top: 90px;
   position: relative;
   width: 100%;
-  height: 728px;
+  height: 800px;
   margin: 180px auto;
   //   16:9 비율 = 100 : 56.25%
   // padding-bottom: 56.25%;
@@ -390,7 +400,7 @@
 
     .player {
       width: 100%;
-      height: 728px;
+      height: 800px;
       background: $b;
     }
   }
@@ -555,9 +565,14 @@ $pFont: Lato, sans-serif;
     @content;
   }
 }
+.widget .schedule .schedule__title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 .widget .inner .calender .calender__month {
   width: 100%;
-  height: 53.5714285714px;
+  height: 54px;
   background: #3d3d3d;
   text-align: center;
   position: relative;
@@ -566,12 +581,17 @@ $pFont: Lato, sans-serif;
   // border-bottom: 1px solid #303030;
 }
 
+.widget .calender__cell {
+  width: 14.285% !important;
+}
+
 .widget .inner .calender__days {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  max-width: 590px;
+  margin: 0 auto;
   height: 246px;
   box-sizing: border-box;
-  padding: 35px 57px;
+  padding: 35px;
 }
 
 .widget .inner .schedule .schedule__formWrapper .schedule__form {
@@ -607,28 +627,62 @@ $pFont: Lato, sans-serif;
     @content;
   }
 }
+.keyboard_arrow_left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.keyboard_arrow_left::before {
+  content: "\f104";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #fff;
+}
+.keyboard_arrow_right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
+.keyboard_arrow_right::before {
+  content: "\f105";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.widget .calender .calender__month--icon--right {
+  right: 37.5px;
+}
+.widget .calender .calender__month--icon--left {
+  left: 37.5px;
+}
 .widget .schedule .schedule__title--text {
   color: #333333;
   position: relative;
   margin: 0;
   width: 100%;
   // height: 400px;
-  top: 170px;
-  left: 255px;
+  // top: 170px;
+  // left: 255px;
   // transform: translateX(-50%);
   font-weight: 700;
   font-size: 1.2rem;
   // transform: translateY(-50%);
+  transform: none;
 }
 .widget .schedule .schedule__title .schedule__title--date {
   color: #33333380;
   width: 100% !important;
   height: 20px;
-  position: absolute;
-  margin: 0;
-  top: 195px;
-  left: 250px;
-  bottom: 0;
+  position: static;
+  // margin-top: 20px;
+  // top: 195px;
+  // left: 250px;
+  // bottom: 0;
   font-size: 14px;
   font-weight: 500;
 }
@@ -656,17 +710,19 @@ html {
   position: relative;
   display: block;
   width: 100%;
-  height: 400px;
+  height: 440px;
   margin: 200px auto;
+  .inner {
+    display: flex;
+  }
   font: {
     size: 0;
   }
   .calender {
-    display: inline-block;
     position: relative;
     // float: left;
     width: 50%;
-    height: 400px;
+    height: 420px;
     box-sizing: border-box;
     background: #232323;
     @include e("month") {
@@ -779,10 +835,11 @@ html {
   }
 
   .schedule {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     // float: left;
     width: 50%;
-    height: 400px;
+    height: 420px;
     box-sizing: border-box;
     // padding: $side/8;
     background: #9b9b9b;
@@ -826,6 +883,9 @@ html {
       height: $side - ($side/8 + ($side - $side/4)/14);
       box-sizing: border-box;
       padding: $side/20 $side/16 $side/16;
+    }
+    .widget .schedule__taskWrapper {
+      display: none;
     }
 
     @include e("formWrapper") {
@@ -1039,4 +1099,35 @@ html {
     text-align: center;
     font-weight: 300;
   }
+}
+
+@media screen and (max-width: 1440px) {
+  // .inner {
+  //   width: 1200px;
+  // }
+  // .carousel {
+  //   width: 1200px;
+  // }
+  // .widget .calender__month--icon {
+  //   color: hsl(0, 0%, 100%);
+  //   position: absolute;
+  //   display: inline-block;
+  //   margin: 0;
+  //   font-weight: 500;
+  //   font-size: 1.1rem;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   cursor: default;
+  // }
+  // .widget .calender__month--text {
+  //   color: hsl(0, 0%, 100%);
+  //   position: relative;
+  //   display: inline-block;
+  //   margin: 0;
+  //   font-family: Lato, sans-serif;
+  //   font-weight: 700;
+  //   font-size: 1.1rem;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
 }
