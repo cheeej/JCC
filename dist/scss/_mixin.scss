@@ -78,3 +78,40 @@
   left: $l;
   right: $r;
 }
+
+/* Wwidth 1440px 이하일 경우 */
+@media screen and (max-width: 1440px) {
+  body {
+    background-color: blue;
+  }
+}
+/* Wwidth 1280px 이하일 경우 */
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/*** Wwidth 1024px 이하일 경우 (tablet)*/
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+}
+/* Wwidth 744px 이하일 경우 */
+@media screen and (max-width: 744px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+/*** Wwidth 428px 이하일 경우(mobile) */
+@media screen and (max-width: 428px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+/* Wwidth 360px 이하일 경우 */
+@media screen and (max-width: 360px) {
+  body {
+    background-color: darkcyan;
+  }
+}

@@ -73,7 +73,7 @@
   }
 }
 .title {
-  margin: 100px 0;
+  margin: 100px 0 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,14 +105,14 @@
     align-items: center;
     width: 994px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 0 100px;
     background-color: #000;
   }
   .box-img {
     position: relative;
     width: 750px;
     height: 400px;
-    margin: 0 auto;
+    margin: -120px auto;
     background: url(../../images/goods/box-img1.jpg) 0 0 / cover no-repeat;
     transform: translateY(-100px);
     &::after {
@@ -139,6 +139,7 @@
   }
 }
 .info-text {
+  margin-top: 120px;
   color: #fff;
   display: inline-flex;
   flex-direction: column;
@@ -259,6 +260,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+    padding-bottom: 10px;
   }
   p {
     text-align: center;
@@ -274,7 +276,7 @@
     width: 24px;
     height: 2px;
     background-color: #000;
-    margin: 20px auto 80px;
+    margin: 30px auto 80px;
   }
   .performance {
     // display: flex;
@@ -349,6 +351,9 @@
     }
   }
 }
+
+// profile
+
 .profile {
   width: 100%;
   // gap: 35px;
@@ -390,6 +395,9 @@
       color: #fff;
     }
   }
+
+  // slider
+
   .swiper {
     display: block;
     // position: absolute;
@@ -435,8 +443,9 @@
 
     object-fit: cover;
   }
+
   .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal:root {
-    --swiper-theme-color: #464646;
+    --swiper-theme-color: #737373;
   }
   :root {
     --swiper-theme-color: #464646;
