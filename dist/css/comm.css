@@ -359,7 +359,7 @@ legend {
   max-height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 200px auto 180px;
+  margin: 250px auto 250px;
   background-color: #888888;
 }
 
@@ -547,6 +547,29 @@ legend {
     max-width: 1280px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .carousel {
+    max-width: 1020px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel {
+    max-width: 740px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .carousel-item .carousel-item--1 .active {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .carousel-item__image {
+    width: 300px;
+  }
+  .carousel-item__info {
+    width: 300px;
+  }
+}
 .nav-box {
   width: 875px;
   height: 810px;
@@ -664,11 +687,41 @@ legend {
   background-color: #f00;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-box {
+    margin: 0 auto;
+    padding: 250px 50px;
+    scale: 0.6;
+  }
+}
+@media screen and (max-width: 744px) {
+  .nav-box {
+    margin: 0 auto;
+    width: 100%;
+    padding: 250px 50px;
+    scale: 0.6;
+  }
+  .set-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+  }
+  .text-box {
+    display: none;
+  }
+  .nb .n-box3 {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .play-box {
   position: relative;
   width: 100%;
   height: 800px;
-  margin: 180px auto;
+  margin: 250px auto;
 }
 .play-box .youtube-wrap {
   width: 100%;
@@ -756,7 +809,7 @@ legend {
 
 .bnr {
   position: relative;
-  margin-top: 200px;
+  margin-top: 250px;
   width: 100%;
   height: 700px;
   background: url(../../images/main/img-rent-concert.png) 0 0/cover no-repeat;
@@ -908,7 +961,7 @@ legend {
 }
 
 .widget .schedule .schedule__title .schedule__title--date {
-  color: rgba(51, 51, 51, 0.5019607843);
+  color: #121212;
   width: 100% !important;
   height: 20px;
   position: static;
@@ -929,7 +982,7 @@ html {
   display: block;
   width: 100%;
   height: 440px;
-  margin: 200px auto;
+  margin: 250px auto;
   font-size: 0;
 }
 .widget .inner {
@@ -1203,6 +1256,7 @@ html {
 .notice .scroll-p {
   overflow-y: auto;
   height: 700px;
+  width: 60%;
 }
 .notice h2 {
   color: #fff;
@@ -1211,10 +1265,17 @@ html {
 .notice h3 {
   color: #fff;
   font-size: 35px;
-  padding: 15px 0;
+  padding: 25px 0;
   font-weight: 600;
 }
 .notice p {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: 300;
+}
+.notice a {
+  display: block;
   color: #fff;
   font-size: 16px;
   padding: 10px 0;
@@ -1895,8 +1956,22 @@ body {
 
 @media screen and (max-width: 1440px) {
   .inner {
-    padding: 0 30px;
+    padding: 0 40px;
+    width: 100%;
     max-width: 1280px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .inner {
+    padding: 0 40px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 744px;
   }
 }
 .main {
