@@ -74,11 +74,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    position: static;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-flex-direction: column;
-
     order: 1;
     left: 0;
     margin: auto;
@@ -194,14 +193,10 @@
     position: absolute;
     left: -30px;
     z-index: 2;
+    // left: -25px;
     // background-color: #5d5d5d;
     bottom: 0;
   }
-  // @media screen and (max-width: 1440px) {
-  //   .carousel__nav {
-  //     left: -30px;
-  //   }
-  // }
 
   .carousel__icon {
     display: inline-block;
@@ -230,6 +225,7 @@
 
   .active {
     z-index: 1;
+    // left: 0;
     display: flex;
     visibility: visible;
   }
@@ -251,28 +247,58 @@
 }
 
 // 반응형
-@media screen and (max-width: 1620px) {
-  .carousel {
-    margin: 180px auto;
+// @media screen and (max-width: 1620px) {
+//   .carousel {
+//     margin: 180px auto;
 
-    background: 000;
-  }
-}
+//     background: 000;
+//   }
+// }
+// @media screen and (max-width: 1728px) {
+// .carousel {
+//   margin: 180px 0;
+//   padding: 100px;
+//   // max-width: 1280px;
+//   background: 000;
+// }
+// .carousel-item__btn {
+//   position: relative;
+// }
+// .carousel .carousel__nav {
+//   position: absolute;
+//   z-index: 3;
+//   left: -60px;
+//   bottom: 0;
+//   padding: 0 90px;
+// }
+// }
 @media screen and (max-width: 1440px) {
   .carousel {
-    margin: 180px auto;
-    // max-width: 1280px;
+    margin: 180px 50px;
+    padding: 0 50px;
+    max-width: 1290px;
     background: 000;
+  }
+  .carousel .carousel__nav {
+    position: absolute;
+    // z-index: 3;
+    left: -70px;
+    bottom: 0;
+    padding: 0 90px;
   }
 }
 @media screen and (max-width: 1280px) {
   .carousel {
-    margin: 180px auto;
-    // max-width: 1020px;
+    margin: 180px 50px;
+    max-width: 1090px;
     padding: 0 50px;
     background: 000;
   }
   .carousel .carousel__nav {
+    position: absolute;
+    z-index: 3;
+    left: -70px;
+    bottom: 0;
     padding: 0 90px;
   }
 }
@@ -290,26 +316,27 @@
     max-width: 730px;
   }
   .carousel .carousel__nav {
-    padding: 0 80px;
+    padding: 0 90px;
   }
 }
 @media screen and (max-width: 744px) {
   .carousel {
-    margin: 180px auto;
-    padding: 0 50px;
+    // margin: 180px auto;
+    margin: 180px 0 100px;
+    // padding: 0 50px;
     background: 000;
   }
   .carousel .carousel__nav {
-    padding: 0 80px;
+    padding: 0 90px;
   }
-  .carousel .carousel-item--1 .carousel-item__image {
-    display: block;
-    // padding: 50px;
-    width: 40%;
-  }
-  .carousel .carousel-item .carousel-item__info {
-    width: 40%;
-  }
+  // .carousel .carousel-item--1 .carousel-item__image {
+  //   display: block;
+  //   // padding: 50px;
+  //   width: 40%;
+  // }
+  // .carousel .carousel-item .carousel-item__info {
+  //   width: 40%;
+  // }
 }
 @media screen and (max-width: 428px) {
   .carousel {
@@ -317,6 +344,11 @@
   }
   .carousel .carousel__nav {
     padding: 0 80px;
+  }
+  .carousel .carousel-item .active .carousel-item__image {
+    transform: none;
+    transition: none;
+    display: none;
   }
 }
 
@@ -503,8 +535,37 @@
   .nav-box {
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     // padding: 220px 50px;
-    scale: 0.6;
+  }
+  .nav-box .set-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 0;
+    left: 200px;
+    // transform: translateX(-51%);
+  }
+  .nav-box .set-box2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .nav-box .set-box2 .n-box3 {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    transform: none;
   }
 }
 // player
@@ -530,6 +591,17 @@
       height: 800px;
       background: $b;
     }
+  }
+}
+@media screen and (max-width: 744px) {
+  .play-box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0 0 100px;
+  }
+  .play-box .youtube-wrap .player {
+    height: 400px;
   }
 }
 
@@ -588,6 +660,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-top: 30px;
     text-align: center;
   }
   .icon1 {
@@ -642,6 +715,10 @@
   .info-icon {
     margin: 0 auto;
     scale: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
   }
   .info .info-icon span {
     font-size: 16px;
@@ -660,6 +737,7 @@
     flex-direction: column;
     margin: 0 auto;
     gap: 30px;
+    width: 100%;
   }
 }
 // wave banner
@@ -1190,7 +1268,7 @@ html {
     }
     .calender {
       width: 100%;
-      height: 500px;
+      height: 400px;
       .calender__days {
         height: 350px;
       }
@@ -1205,6 +1283,31 @@ html {
     }
   }
 }
+// @media screen and (max-width: 834px) {
+//   .widget {
+//     .inner {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: nowrap;
+//       justify-content: space-between;
+//     }
+//     .calender {
+//       width: 100%;
+//       height: 500px;
+//       .calender__days {
+//         height: 350px;
+//       }
+//     }
+//     .schedule {
+//       width: 100%;
+//       height: auto;
+//       .schedule__title {
+//         height: auto;
+//         padding: 50px;
+//       }
+//     }
+//   }
+// }
 
 // notice
 .notice {
@@ -1308,34 +1411,46 @@ html {
     color: #d9d9d9;
   }
 }
-
 @media screen and (max-width: 1440px) {
-  // .inner {
-  //   width: 1200px;
-  // }
-  // .carousel {
-  //   width: 1200px;
-  // }
-  // .widget .calender__month--icon {
-  //   color: hsl(0, 0%, 100%);
-  //   position: absolute;
-  //   display: inline-block;
-  //   margin: 0;
-  //   font-weight: 500;
-  //   font-size: 1.1rem;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   cursor: default;
-  // }
-  // .widget .calender__month--text {
-  //   color: hsl(0, 0%, 100%);
-  //   position: relative;
-  //   display: inline-block;
-  //   margin: 0;
-  //   font-family: Lato, sans-serif;
-  //   font-weight: 700;
-  //   font-size: 1.1rem;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
+  .notice {
+    // max-width: 1280px;
+    margin: 0 auto;
+    .inner {
+      padding: 0 40px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      height: 500px;
+      // line-height: 500px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .notice {
+    margin: 100px auto;
+    .container-scroll {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      height: 100px;
+    }
+    h3 {
+      font-size: 25px;
+      padding: 25px 0;
+      font-weight: 600;
+    }
+    .notice .container-scroll .scroll-p {
+      overflow-y: auto;
+      height: 600px;
+      width: 80%;
+      padding: 0 10px;
+    }
+  }
+}
+@media screen and (max-width: 428px) {
 }
