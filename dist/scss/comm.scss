@@ -60,17 +60,20 @@ body {
     padding: 0 40px;
     width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1280px) {
   .inner {
     padding: 0 40px;
     width: 100%;
+    margin: 0 auto;
     // max-width: 1024px;
   }
 }
 @media screen and (max-width: 1024px) {
   .inner {
+    margin: 0 auto;
     padding: 0 30px;
     width: 100%;
     max-width: 744px;
