@@ -49,7 +49,7 @@
   max-height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 250px auto 250px;
+  margin: 220px auto 220px;
   background-color: #888888;
   .carousel-item {
     visibility: visible;
@@ -338,8 +338,14 @@
     height: 330px;
     line-height: 330px;
     display: flex;
+<<<<<<< HEAD
     // align-items: center;
     // justify-content: center;
+=======
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+>>>>>>> ac0ee03174fbc79ecf9b2f3aede9908d8ae18efb
     gap: 30px;
     font-size: 32px;
     font-weight: 400;
@@ -445,6 +451,7 @@
 @media screen and (max-width: 1024px) {
   .nav-box {
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 0 50px;
     scale: 0.8;
   }
@@ -506,7 +513,36 @@
     // padding: 220px 50px;
     scale: 0.6;
   }
+=======
+    padding: 220px 50px;
+    scale: 0.7;
+  }
 }
+// @media screen and (max-width: 744px) {
+//   .nav-box {
+//     margin: 0 auto;
+//     width: 100%;
+//     padding: 220px 50px;
+//     scale: 0.6;
+//   }
+.set-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  // left: -30%;
+>>>>>>> ac0ee03174fbc79ecf9b2f3aede9908d8ae18efb
+}
+.text-box {
+  display: none;
+}
+.nb .n-box3 {
+  margin: 0 auto;
+  width: 100%;
+}
+
 // player
 
 .play-box {
@@ -514,7 +550,11 @@
   position: relative;
   width: 100%;
   height: 800px;
+<<<<<<< HEAD
   margin: 220px auto;
+=======
+  margin: 100px auto;
+>>>>>>> ac0ee03174fbc79ecf9b2f3aede9908d8ae18efb
   //   16:9 비율 = 100 : 56.25%
   // padding-bottom: 56.25%;
   .youtube-wrap {
@@ -666,7 +706,7 @@
 
 .bnr {
   position: relative;
-  margin-top: 250px;
+  margin-top: 220px;
   width: 100%;
   height: 700px;
   background: url(../../images/main/img-rent-concert.png) 0 0 / cover no-repeat;
@@ -878,7 +918,11 @@ html {
   display: block;
   width: 100%;
   height: 440px;
+<<<<<<< HEAD
   margin: 220px auto 200px;
+=======
+  margin: 220px auto;
+>>>>>>> ac0ee03174fbc79ecf9b2f3aede9908d8ae18efb
   .inner {
     display: flex;
   }
