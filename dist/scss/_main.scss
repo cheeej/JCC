@@ -562,6 +562,7 @@
     // padding: 220px 50px;
     position: relative;
     font-size: 14px;
+    height: 630px;
   }
   .nav-box .set-box {
     position: absolute;
@@ -618,15 +619,24 @@
     }
   }
 }
+@media screen and (max-width: 1280px) {
+  .play-box {
+    height: 600px;
+    margin: 0 auto 70px;
+  }
+  .play-box .youtube-wrap .player {
+    height: 600px;
+  }
+}
 @media screen and (max-width: 744px) {
   .play-box {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin: 0 0 100px;
   }
   .play-box .youtube-wrap .player {
-    height: 400px;
+    height: 300px;
   }
 }
 
