@@ -532,7 +532,7 @@ legend {
 
 @media screen and (max-width: 1440px) {
   .carousel {
-    margin: 180px 50px;
+    margin: 220px 50px;
     padding: 0 50px;
     max-width: 1290px;
     background: 0;
@@ -561,14 +561,14 @@ legend {
 }
 @media screen and (max-width: 1024px) {
   .carousel {
-    margin: 180px auto;
+    margin: 180px auto 120px;
     padding: 0 50px;
     background: 0;
   }
 }
 @media screen and (max-width: 834px) {
   .carousel {
-    margin: 180px auto;
+    margin: 180px auto 80px;
     max-width: 730px;
   }
   .carousel .carousel__nav {
@@ -577,7 +577,7 @@ legend {
 }
 @media screen and (max-width: 744px) {
   .carousel {
-    margin: 180px 0 100px;
+    margin: 170px 0 80px;
     background: 0;
   }
   .carousel .carousel__nav {
@@ -748,6 +748,7 @@ legend {
     margin: 0 auto;
     width: 100%;
     scale: 0.7;
+    height: 720px;
   }
   .nav-box .set-box {
     position: fixed;
@@ -824,7 +825,7 @@ legend {
   position: relative;
   width: 100%;
   height: 800px;
-  margin: 220px auto;
+  margin: 200px auto;
 }
 .play-box .youtube-wrap {
   width: 100%;
@@ -964,7 +965,7 @@ legend {
 }
 @media screen and (max-width: 744px) {
   .info {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 100%;
   }
   .info-icon {
@@ -1030,6 +1031,7 @@ legend {
 @media screen and (max-width: 744px) {
   .bnr {
     height: 300px;
+    margin-top: 120px;
   }
   .wave-w {
     scale: 0.6;
@@ -1419,6 +1421,7 @@ html {
 
 @media screen and (max-width: 1024px) {
   .widget .inner {
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1437,6 +1440,12 @@ html {
   .widget .schedule .schedule__title {
     height: auto;
     padding: 30px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .widget {
+    margin: 130px auto;
+    height: 100%;
   }
 }
 @media screen and (max-width: 360px) {
