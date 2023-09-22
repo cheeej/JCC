@@ -562,6 +562,7 @@ legend {
     max-width: 1090px;
     padding: 0 50px;
     background: 0;
+    scale: 0.9;
   }
   .carousel .carousel__nav {
     position: absolute;
@@ -581,6 +582,7 @@ legend {
 @media screen and (max-width: 834px) {
   .carousel {
     margin: 180px auto 60px;
+    scale: 0.8;
   }
   .carousel .carousel__nav {
     padding: 0 90px;
@@ -592,7 +594,20 @@ legend {
     background: 0;
   }
   .carousel .carousel__nav {
-    padding: 0 90px;
+    line-height: 1.2;
+    padding: 0;
+    left: 300px;
+    bottom: -12px;
+  }
+  .carousel-item--1 {
+    flex-direction: column-reverse;
+  }
+  .carousel .carousel-item__image {
+    width: 100%;
+  }
+  .carousel .carousel-item__info {
+    width: 100%;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 428px) {
@@ -758,14 +773,14 @@ legend {
   .nav-box {
     margin: 0 auto;
     width: 100%;
-    scale: 0.7;
+    scale: 0.75;
     height: 720px;
   }
   .nav-box .set-box {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-51%);
+    transform: translateX(-50%);
   }
   .nav-box .set-box2 .text-box {
     display: none;
@@ -801,7 +816,7 @@ legend {
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     height: 630px;
   }
   .nav-box .set-box {
@@ -812,6 +827,7 @@ legend {
     justify-content: center;
     margin: 0 auto;
     width: 100%;
+    font-size: 18px;
   }
   .nav-box .set-box .n-box1 {
     width: 100%;
@@ -826,6 +842,7 @@ legend {
     height: 200px;
     margin: 0 auto;
     top: 410px;
+    font-size: 18px;
   }
   .nav-box .set-box2 .n-box3 {
     width: 100%;
@@ -976,7 +993,7 @@ legend {
 }
 @media screen and (max-width: 744px) {
   .info {
-    margin: 100px auto;
+    margin: 150px auto;
     width: 100%;
   }
   .info-icon {
@@ -1550,6 +1567,9 @@ html {
     padding: 25px 0;
     font-weight: 600;
   }
+  .notice a {
+    font-size: 14px;
+  }
   .notice .container-scroll .scroll-p {
     height: 600px;
     width: 100%;
@@ -1623,6 +1643,12 @@ html {
   background-color: #000;
 }
 
+@media screen and (max-width: 1280px) {
+  .bnr-img .black-box {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .accordion {
   margin: 100px auto;
   width: 1440px;
@@ -1774,6 +1800,118 @@ html {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1440px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bnr-img .sub-bg img {
+    width: 600px;
+    height: 600px;
+  }
+  .bnr-img .sub-bg {
+    right: 140px;
+  }
+  .bnr-img .back-banner img {
+    height: 600px;
+  }
+  .bnr-img .black-box {
+    height: 600px;
+  }
+  .bnr-img h2 {
+    top: 340px;
+  }
+  .bnr-img p {
+    top: 450px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bnr-img .sub-bg {
+    right: 140px;
+  }
+  .bnr-img h2 {
+    font-size: 60px;
+  }
+  .bnr-img p {
+    font-size: 20px;
+  }
+  .bnr-img .sub-bg img {
+    width: 470px;
+    height: 600px;
+  }
+  .bnr-img .back-banner img {
+    height: 600px;
+  }
+  .bnr-img .black-box {
+    height: 600px;
+  }
+  .accordion .container {
+    margin-top: 80px;
+  }
+  .accordion .pp {
+    padding: 15px 90px 15px;
+  }
+  .accordion ul > li > span {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .accordion .inner {
+    max-width: 900px;
+  }
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bnr-img .sub-bg {
+    right: 110px;
+  }
+  .bnr-img .sub-bg img {
+    width: 400px;
+    height: 500px;
+  }
+  .bnr-img .back-banner img {
+    height: 500px;
+  }
+  .bnr-img .black-box {
+    height: 500px;
+  }
+  .bnr-img h2 {
+    top: 280px;
+  }
+  .bnr-img p {
+    top: 370px;
+    font-size: 16px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .bnr-img .sub-bg img {
+    width: 280px;
+  }
+  .bnr-img .sub-bg {
+    display: none;
+    right: 70px;
+  }
+  .bnr-img h2 {
+    top: 290px;
+    font-size: 50px;
+    left: 100px;
+  }
+  .bnr-img p {
+    font-size: 14px;
+    left: 100px;
+    letter-spacing: 8px;
+  }
+  .accordion .container .depth1 .depth2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #main {
   position: relative;
 }

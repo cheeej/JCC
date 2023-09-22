@@ -305,6 +305,7 @@
     max-width: 1090px;
     padding: 0 50px;
     background: 000;
+    scale: 0.9;
   }
   .carousel .carousel__nav {
     position: absolute;
@@ -327,6 +328,7 @@
   .carousel {
     margin: 180px auto 60px;
     // max-width: 730px;
+    scale: 0.8;
   }
   .carousel .carousel__nav {
     padding: 0 90px;
@@ -338,9 +340,15 @@
     margin: 170px 0 60px;
     // padding: 0 50px;
     background: 000;
+    // padding: 0;
   }
   .carousel .carousel__nav {
-    padding: 0 90px;
+    line-height: 1.2;
+    padding: 0;
+    left: 300px;
+    // right: 0;
+    bottom: -12px;
+    // left: 547px;
   }
   // .carousel .carousel-item--1 .carousel-item__image {
   //   display: block;
@@ -350,6 +358,16 @@
   // .carousel .carousel-item .carousel-item__info {
   //   width: 40%;
   // }
+  .carousel-item--1 {
+    flex-direction: column-reverse;
+  }
+  .carousel .carousel-item__image {
+    width: 100%;
+  }
+  .carousel .carousel-item__info {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 428px) {
   .carousel {
@@ -524,12 +542,13 @@
   .inner {
     width: 100%;
     height: 100%;
+    // scale: 0.8;
   }
   .nav-box {
     margin: 0 auto;
     width: 100%;
     // padding: 220px 50px;
-    scale: 0.7;
+    scale: 0.75;
     height: 720px;
   }
 
@@ -537,7 +556,7 @@
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-51%);
+    transform: translateX(-50%);
   }
   .nav-box .set-box2 .text-box {
     display: none;
@@ -566,6 +585,7 @@
     width: 100%;
     height: 800px;
     margin: 0 auto;
+    // scale: 1;
   }
   .nav-box {
     margin: 0 auto;
@@ -575,7 +595,7 @@
     flex-wrap: nowrap;
     // padding: 220px 50px;
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     height: 630px;
   }
   .nav-box .set-box {
@@ -584,9 +604,9 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-
     margin: 0 auto;
     width: 100%;
+    font-size: 18px;
     // transform: translateX(-51%);
   }
   .nav-box .set-box .n-box1 {
@@ -602,6 +622,7 @@
     height: 200px;
     margin: 0 auto;
     top: 410px;
+    font-size: 18px;
   }
   .nav-box .set-box2 .n-box3 {
     width: 100%;
@@ -777,7 +798,7 @@
 }
 @media screen and (max-width: 744px) {
   .info {
-    margin: 100px auto;
+    margin: 150px auto;
     width: 100%;
     // scale: 0.6;
   }
@@ -1483,6 +1504,9 @@ html {
       padding: 25px 0;
       font-weight: 600;
     }
+  }
+  .notice a {
+    font-size: 14px;
   }
   .notice .container-scroll .scroll-p {
     height: 600px;

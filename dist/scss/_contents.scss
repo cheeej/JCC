@@ -75,6 +75,12 @@
   //   //   background-color: #000;
   //   // }
 }
+@media screen and (max-width: 1280px) {
+  .bnr-img .black-box {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 
 .accordion {
   margin: 100px auto;
@@ -252,5 +258,120 @@
       height: 320px;
       background-color: rgba($b, 0.1);
     }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bnr-img .sub-bg img {
+    width: 600px;
+    height: 600px;
+  }
+  .bnr-img .sub-bg {
+    right: 140px;
+  }
+  .bnr-img .back-banner img {
+    height: 600px;
+  }
+  .bnr-img .black-box {
+    height: 600px;
+  }
+  .bnr-img h2 {
+    top: 340px;
+  }
+  .bnr-img p {
+    top: 450px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  // .accordion {
+  //   margin: 80px 0;
+  // }
+  .bnr-img .sub-bg {
+    right: 140px;
+  }
+  .bnr-img h2 {
+    font-size: 60px;
+  }
+  .bnr-img p {
+    font-size: 20px;
+  }
+  .bnr-img .sub-bg img {
+    width: 470px;
+    height: 600px;
+  }
+  .bnr-img .back-banner img {
+    height: 600px;
+  }
+  .bnr-img .black-box {
+    height: 600px;
+  }
+  .accordion .container {
+    margin-top: 80px;
+  }
+  .accordion .pp {
+    padding: 15px 90px 15px;
+  }
+  .accordion ul > li > span {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .accordion .inner {
+    max-width: 900px;
+  }
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bnr-img .sub-bg {
+    right: 110px;
+  }
+  .bnr-img .sub-bg img {
+    width: 400px;
+    height: 500px;
+  }
+  .bnr-img .back-banner img {
+    height: 500px;
+  }
+  .bnr-img .black-box {
+    height: 500px;
+  }
+  .bnr-img h2 {
+    top: 280px;
+  }
+  .bnr-img p {
+    top: 370px;
+    font-size: 16px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .bnr-img .sub-bg img {
+    width: 280px;
+  }
+  .bnr-img .sub-bg {
+    display: none;
+    right: 70px;
+  }
+  .bnr-img h2 {
+    top: 290px;
+    font-size: 50px;
+    left: 100px;
+  }
+  .bnr-img p {
+    font-size: 14px;
+    left: 100px;
+    letter-spacing: 8px;
+  }
+  .accordion .container .depth1 .depth2 {
+    display: flex;
+    flex-direction: column;
   }
 }
