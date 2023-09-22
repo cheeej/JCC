@@ -2300,8 +2300,30 @@ html {
   padding-left: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  .inner {
+    width: auto;
+  }
+  .information {
+    margin: 0 auto;
+  }
+  .information .cont {
+    margin: 0 auto;
+  }
+  .information .box-img {
+    width: 530px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .title h3 {
+    font-size: 50px;
+  }
+  .title {
+    margin: 80px 0 200px;
+  }
+}
 .profile {
-  width: 100%;
   padding-bottom: 150px;
 }
 .profile .inner {
@@ -2400,7 +2422,6 @@ body {
 
 .inner {
   max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
 }
 
