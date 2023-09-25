@@ -40,13 +40,13 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .banner .bnr img {
+  .banner img {
     width: 100%;
     height: 600px;
   }
 }
 @media screen and (max-width: 744px) {
-  .banner .bnr img {
+  .banner img {
     width: 100%;
     height: 400px;
   }
@@ -68,14 +68,8 @@
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    -webkit-align-items: center;
-    -webkit-justify-content: flex-end;
     position: relative;
     background-color: $b;
-    flex-shrink: 0;
-    -webkit-flex-shrink: 0;
     position: absolute;
     z-index: 0;
     transition: 0.6s all linear;
@@ -142,6 +136,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.6s all ease-in-out;
+    word-break: keep-all;
   }
 
   .carousel-item__description {
@@ -149,35 +144,34 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.6s all ease-in-out;
-    margin-top: 35px;
+    margin: 35px 0;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     color: #e3e3e3;
     line-height: 22px;
-    margin-bottom: 35px;
   }
   .img {
     object-fit: cover;
     object-position: 50%;
   }
   .carousel-item--1 .carousel-item__image {
-    background: url("../../images/main/slide1.jpg") 50% 50% / cover no-repeat;
+    background: url("../../images/main/slide-1.jpg") 50% 50% / cover no-repeat;
   }
 
   .carousel-item--2 .carousel-item__image {
-    background: url("../../images/main/slide2.jpg") 50% 50% / cover no-repeat;
+    background: url("../../images/main/slide-2.jpg") 50% 50% / cover no-repeat;
   }
 
   .carousel-item--3 .carousel-item__image {
-    background: url("../../images/main/slide3.jpg") 50% 50% / cover no-repeat;
+    background: url("../../images/main/slide-3.jpg") 50% 50% / cover no-repeat;
   }
 
   .carousel-item--4 .carousel-item__image {
-    background: url("../../images/main/slide4.jpg") 50% 50% / cover no-repeat;
+    background: url("../../images/main/slide4.png") 50% 50% / cover no-repeat;
   }
 
   .carousel-item--5 .carousel-item__image {
-    background: url("../../images/main/slide5.jpg") 50% 50% / cover no-repeat;
+    background: url("../../images/main/slide5.png") 50% 50% / cover no-repeat;
   }
 }
 
@@ -258,77 +252,20 @@
   }
 }
 
-// 반응형
-// @media screen and (max-width: 1620px) {
-//   .carousel {
-//     margin: 180px auto;
-
-//     background: 000;
-//   }
-// }
-// @media screen and (max-width: 1728px) {
-// .carousel {
-//   margin: 180px 0;
-//   padding: 100px;
-//   // max-width: 1280px;
-//   background: 000;
-// }
-// .carousel-item__btn {
-//   position: relative;
-// }
-// .carousel .carousel__nav {
-//   position: absolute;
-//   z-index: 3;
-//   left: -60px;
-//   bottom: 0;
-//   padding: 0 90px;
-// }
-// }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: $gridWidth) {
   .carousel {
-    margin: 220px 50px;
-    padding: 0 50px;
-    max-width: 1290px;
+    margin: 220px auto;
     background: 000;
-  }
-  .carousel .carousel__nav {
-    position: absolute;
-    // z-index: 3;
-    left: -70px;
-    bottom: 0;
-    padding: 0 90px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .carousel {
-    margin: 180px 50px;
-    max-width: 1090px;
-    padding: 0 50px;
-    background: 000;
-    scale: 0.9;
-  }
-  .carousel .carousel__nav {
-    position: absolute;
-    z-index: 3;
-    left: -70px;
-    bottom: 0;
-    padding: 0 90px;
   }
 }
 @media screen and (max-width: 1024px) {
   .carousel {
-    margin: 180px auto 120px;
-    // max-width: 830px;
-    padding: 0 50px;
-    background: 000;
-    // left: 30px;
+    margin: 180px auto 110px;
   }
 }
 @media screen and (max-width: 834px) {
   .carousel {
     margin: 180px auto 60px;
-    // max-width: 730px;
-    scale: 0.8;
   }
   .carousel .carousel__nav {
     padding: 0 90px;
@@ -337,28 +274,21 @@
 @media screen and (max-width: 744px) {
   .carousel {
     // margin: 180px auto;
-    margin: 170px 0 60px;
-    // padding: 0 50px;
+    margin: 180px 0 100px;
     background: 000;
-    // padding: 0;
+  }
+  .carousel .carousel-item__description {
+    margin: 20px 0;
   }
   .carousel .carousel__nav {
     line-height: 1.2;
     padding: 0;
-    left: 300px;
-    // right: 0;
-    bottom: -12px;
+    left: auto;
+    right: 0;
+    bottom: 0;
     // left: 547px;
   }
-  // .carousel .carousel-item--1 .carousel-item__image {
-  //   display: block;
-  //   // padding: 50px;
-  //   width: 40%;
-  // }
-  // .carousel .carousel-item .carousel-item__info {
-  //   width: 40%;
-  // }
-  .carousel-item--1 {
+  .carousel-item {
     flex-direction: column-reverse;
   }
   .carousel .carousel-item__image {
@@ -377,25 +307,19 @@
   .inner {
     padding: 0;
   }
-  .carousel .carousel__nav {
-    padding: 0 80px;
-    scale: 0.7;
-    left: -90px;
-  }
   .carousel .carousel-item .active .carousel-item__image {
     transform: none;
     transition: none;
     display: none;
   }
   .carousel-item__container {
-    scale: 0.7;
     margin-top: 0;
   }
   .carousel .carousel-item__info {
     // position: absolute;
     // top: 0;
-    padding: 0 20px;
-    display: static;
+    padding: 0;
+    position: static;
   }
   .active {
     left: 0;
@@ -524,21 +448,15 @@
     }
   }
 }
+// @media screen and (max-width: 1024px) {
+//   .nav-box {
+//     margin: 0 auto;
+//     padding: 0 50px;
+//     scale: 0.8;
+//   }
+// }
+
 @media screen and (max-width: 1024px) {
-  .nav-box {
-    margin: 0 auto;
-    padding: 0 50px;
-    scale: 0.8;
-  }
-}
-@media screen and (max-width: 834px) {
-  .nav-box {
-    margin: 0 auto;
-    // padding: 220px 50px;
-    scale: 0.7;
-  }
-}
-@media screen and (max-width: 744px) {
   .inner {
     width: 100%;
     height: 100%;
@@ -580,10 +498,10 @@
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 744px) {
   .inner {
     width: 100%;
-    height: 800px;
+    // height: 800px;
     margin: 0 auto;
     // scale: 1;
   }
@@ -606,7 +524,8 @@
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
+    letter-spacing: 2px;
     // transform: translateX(-51%);
   }
   .nav-box .set-box .n-box1 {
@@ -627,6 +546,8 @@
   .nav-box .set-box2 .n-box3 {
     width: 100%;
     height: 100%;
+    font-size: 25px;
+    letter-spacing: 2px;
   }
 }
 // player
@@ -668,7 +589,7 @@
     position: relative;
     width: 100%;
     height: 200px;
-    margin: 0 0 70px;
+    margin: 80px 0 100px;
   }
   .play-box .youtube-wrap .player {
     height: 300px;
@@ -834,12 +755,12 @@
   align-items: center;
 }
 .wave-w {
-  background: url(../../images/main/Lettering3.png) repeat-x;
+  background: url(../../images/main/Lettering2.png) repeat-x;
   // background-size: auto 100%;
   position: absolute;
   opacity: 0.7;
   z-index: 100;
-  top: 40%;
+  top: 45%;
   left: 0;
   transform: translateX(-50px);
   width: 6400px;
@@ -1372,7 +1293,7 @@ html {
 }
 @media screen and (max-width: 744px) {
   .widget {
-    margin: 130px auto;
+    margin: 170px auto 150px;
     height: 100%;
   }
 }

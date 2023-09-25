@@ -142,23 +142,19 @@ input {
 }
 
 /* 기본 폰트 설정 */
-/* mobile */
-
 body,
 html {
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #111;
 }
-
-// /* desktop */
-// @media screen and (min-width: 1280px) {
-//   body {
-//     font-size: 16px;
-//   }
-// }
+@media screen and (max-width: 744px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 /* color값은 디자인가이드에 맞게사용 */
 
@@ -311,3 +307,18 @@ legend {
 //     opacity: 50;
 //   }
 // }
+
+.pc {
+  display: block;
+}
+.m {
+  display: none;
+}
+@media screen and (max-width: 744px) {
+  .pc {
+    display: none;
+  }
+  .m {
+    display: block;
+  }
+}
