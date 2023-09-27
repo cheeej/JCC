@@ -11,7 +11,7 @@
     left: 170px;
     z-index: 1000;
     font-family: Raleway;
-    font-size: 80px;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 200;
     line-height: 120%;
@@ -24,7 +24,7 @@
     left: 170px;
     z-index: 1010;
     font-family: Raleway;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 200;
     line-height: 120%;
@@ -60,7 +60,7 @@
   justify-content: center;
   color: #ffffff;
   font-family: Noto Sans KR;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 42px */
@@ -82,7 +82,7 @@
   h3 {
     color: #000;
     font-family: Raleway;
-    font-size: 52px;
+    font-size: 3.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 62.4px */
@@ -91,7 +91,7 @@
     color: #646464;
     /* noto/body-r-19 */
     font-family: Noto Sans KR;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 22.8px */
@@ -170,7 +170,7 @@
   }
   strong {
     font-family: Noto Sans KR;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -184,7 +184,7 @@
     justify-content: start;
     align-items: flex-start;
     font-family: Noto Sans KR;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 26.4px */
@@ -198,7 +198,7 @@
     align-items: flex-start;
     gap: 13px;
     font-family: Noto Sans KR;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-style: normal;
     font-weight: 300;
     line-height: 120%;
@@ -212,7 +212,7 @@
     align-items: flex-start;
     gap: 16px;
     font-family: Noto Sans KR;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 200;
     line-height: 120%;
@@ -236,7 +236,7 @@
       align-items: flex-start;
       gap: 8px;
       font-family: Noto Sans KR;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-style: normal;
       font-weight: 300;
       line-height: 120%;
@@ -260,16 +260,16 @@
     width: 530px;
   }
   .title p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .title h3 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .title {
     margin: 80px 0 200px;
   }
   .button {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media screen and (max-width: 744px) {
@@ -301,7 +301,7 @@
   h3 {
     text-align: center;
     font-family: Raleway;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
@@ -310,7 +310,7 @@
   p {
     text-align: center;
     font-family: Noto Sans KR;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -346,7 +346,7 @@
       display: flex;
       padding-right: 50px;
       font-family: Noto Sans KR;
-      font-size: 22px;
+      font-size: 1.375rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -355,7 +355,7 @@
       // width: 552px;
       display: flex;
       font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 1.1875rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -365,7 +365,7 @@
       display: flex;
       justify-content: center;
       font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 1.1875rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -382,7 +382,7 @@
       justify-content: start;
       align-items: start;
       font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 1.1875rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -391,7 +391,7 @@
     .depth2-2 {
       display: flex;
       font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 1.1875rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -407,7 +407,7 @@
   }
 
   .program .performance .depth1 .depth1-1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     // align-items: center;
   }
 }
@@ -441,14 +441,14 @@
       color: #fff;
       text-align: center;
       font-family: Raleway;
-      font-size: 27px;
+      font-size: 1.6875rem;
       font-style: normal;
       font-weight: 600;
       line-height: 120%;
     }
     p {
       font-family: Noto Sans KR;
-      font-size: 19px;
+      font-size: 1.1875rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -470,7 +470,7 @@
   .swiper-slide {
     height: 730px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     background: #c2c2c2;
     display: flex;
     flex-direction: column;
@@ -481,7 +481,7 @@
     text-align: center;
   }
   .img-name {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 400;
     line-height: 140%;
     display: flex;
@@ -491,7 +491,7 @@
   .txt {
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 300;
     padding: 0 15px;
     // letter-spacing: 0.03em;

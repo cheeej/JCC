@@ -113,7 +113,7 @@
   .carousel-item__subtitle {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 0.625rem;
     text-transform: uppercase;
     margin: 0;
     color: #e3e3e3;
@@ -127,7 +127,7 @@
   .carousel-item__title {
     margin: 20px 0 0 0;
     // font-family: "Raleway";
-    font-size: 43px;
+    font-size: 2.6875rem;
     line-height: 1.4;
     letter-spacing: 2px;
     font-weight: 600;
@@ -146,7 +146,7 @@
     transition: 0.6s all ease-in-out;
     margin: 35px 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #e3e3e3;
     line-height: 22px;
   }
@@ -183,7 +183,7 @@
     color: #e3e3e3;
     font-family: "Open Sans", sans-serif;
     // letter-spacing: 3px;
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-transform: uppercase;
     margin: 0;
     width: 35%;
@@ -347,7 +347,7 @@
     // align-items: center;
     // justify-content: center;
     gap: 30px;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     color: #fff;
 
@@ -389,7 +389,7 @@
     align-items: center;
     gap: 115px;
     font-family: Noto Sans KR;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 38.4px */
@@ -398,12 +398,12 @@
       margin-top: 40px;
       color: #fff;
       font-family: Raleway;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-style: normal;
       font-weight: 300;
       line-height: 100%; /* 24px */
       letter-spacing: 6.5px;
-      font-size: 30px;
+      font-size: 1.875rem;
       display: flex;
       flex-direction: column;
       width: 373px;
@@ -420,7 +420,7 @@
       }
       h3 {
         font-family: Raleway;
-        font-size: 60px;
+        font-size: 3.75rem;
         font-style: normal;
         font-weight: 400;
         line-height: 90%; /* 72px */
@@ -513,7 +513,7 @@
     flex-wrap: nowrap;
     // padding: 220px 50px;
     position: relative;
-    font-size: 18px;
+    font-size: 1.125rem;
     height: 630px;
   }
   .nav-box .set-box {
@@ -524,7 +524,7 @@
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     letter-spacing: 2px;
     // transform: translateX(-51%);
   }
@@ -541,12 +541,12 @@
     height: 200px;
     margin: 0 auto;
     top: 410px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .nav-box .set-box2 .n-box3 {
     width: 100%;
     height: 100%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     letter-spacing: 2px;
   }
 }
@@ -624,7 +624,7 @@
   }
   h3 {
     font-family: Noto Sans KR;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 38.4px */
@@ -632,7 +632,7 @@
   }
   p {
     font-family: Noto Sans KR;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -682,7 +682,7 @@
     transform: translateX(-50%);
   }
   .info-icon i {
-    font-size: 64px;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     transition: all 0.5s;
@@ -691,7 +691,7 @@
     color: #f00;
   }
   .info-icon span {
-    font-size: 18px;
+    font-size: 1.125rem;
     display: inline-block;
   }
   // .las la-university {
@@ -713,7 +713,7 @@
     width: 100%;
   }
   .info .info-icon span {
-    font-size: 16px;
+    font-size: 1rem;
     width: 100%;
   }
 }
@@ -935,7 +935,7 @@ $pFont: Lato, sans-serif;
   // top: 195px;
   // left: 250px;
   // bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
@@ -950,7 +950,7 @@ $pFont: Lato, sans-serif;
 $side: 300px;
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 * {
@@ -1355,7 +1355,7 @@ html {
   h2 {
     font-family: Raleway;
     color: #fff;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
     letter-spacing: 1px;
     height: 500px;
@@ -1363,7 +1363,7 @@ html {
   }
   h3 {
     color: #fff;
-    font-size: 35px;
+    font-size: 2.1875rem;
     padding: 25px 0;
     font-weight: 600;
     &:nth-child(1) {
@@ -1379,14 +1379,14 @@ html {
   a {
     display: block;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 10px 0;
     font-weight: 400;
   }
   span {
     // position: absolute;
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: 300;
     color: #d9d9d9;
@@ -1402,7 +1402,7 @@ html {
       margin: 0 auto;
     }
     h2 {
-      font-size: 40px;
+      font-size: 2.5rem;
       font-weight: 600;
       letter-spacing: 1px;
       height: 500px;
@@ -1421,13 +1421,13 @@ html {
       height: 100px;
     }
     h3 {
-      font-size: 25px;
+      font-size: 1.5625rem;
       padding: 25px 0;
       font-weight: 600;
     }
   }
   .notice a {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .notice .container-scroll .scroll-p {
     height: 600px;
