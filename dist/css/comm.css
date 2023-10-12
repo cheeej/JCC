@@ -438,7 +438,7 @@ legend {
 .carousel .carousel-item__subtitle {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 3px;
-  font-size: 10px;
+  font-size: 0.625rem;
   text-transform: uppercase;
   margin: 0;
   color: #e3e3e3;
@@ -450,7 +450,7 @@ legend {
 }
 .carousel .carousel-item__title {
   margin: 20px 0 0 0;
-  font-size: 43px;
+  font-size: 2.6875rem;
   line-height: 1.4;
   letter-spacing: 2px;
   font-weight: 600;
@@ -468,7 +468,7 @@ legend {
   transition: 0.6s all ease-in-out;
   margin: 35px 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #e3e3e3;
   line-height: 22px;
 }
@@ -498,7 +498,7 @@ legend {
   width: 35%;
   color: #e3e3e3;
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   margin: 0;
   width: 35%;
@@ -642,7 +642,7 @@ legend {
   line-height: 330px;
   display: flex;
   gap: 30px;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   color: #fff;
 }
@@ -680,7 +680,7 @@ legend {
   align-items: center;
   gap: 115px;
   font-family: Noto Sans KR;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 38.4px */
@@ -689,12 +689,12 @@ legend {
   margin-top: 40px;
   color: #fff;
   font-family: Raleway;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
   line-height: 100%; /* 24px */
   letter-spacing: 6.5px;
-  font-size: 30px;
+  font-size: 1.875rem;
   display: flex;
   flex-direction: column;
   width: 373px;
@@ -711,7 +711,7 @@ legend {
 }
 .nav-box .set-box2 .text-box h3 {
   font-family: Raleway;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 72px */
@@ -787,7 +787,7 @@ legend {
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    font-size: 18px;
+    font-size: 1.125rem;
     height: 630px;
   }
   .nav-box .set-box {
@@ -798,7 +798,7 @@ legend {
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     letter-spacing: 2px;
   }
   .nav-box .set-box .n-box1 {
@@ -814,12 +814,12 @@ legend {
     height: 200px;
     margin: 0 auto;
     top: 410px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .nav-box .set-box2 .n-box3 {
     width: 100%;
     height: 100%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     letter-spacing: 2px;
   }
 }
@@ -881,7 +881,7 @@ legend {
 }
 .info h3 {
   font-family: Noto Sans KR;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 38.4px */
@@ -889,7 +889,7 @@ legend {
 }
 .info p {
   font-family: Noto Sans KR;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -935,7 +935,7 @@ legend {
   transform: translateX(-50%);
 }
 .info .info-icon i {
-  font-size: 64px;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
   transition: all 0.5s;
@@ -944,7 +944,7 @@ legend {
   color: #f00;
 }
 .info .info-icon span {
-  font-size: 18px;
+  font-size: 1.125rem;
   display: inline-block;
 }
 
@@ -961,7 +961,7 @@ legend {
     width: 100%;
   }
   .info .info-icon span {
-    font-size: 16px;
+    font-size: 1rem;
     width: 100%;
   }
 }
@@ -1151,12 +1151,12 @@ legend {
   width: 100% !important;
   height: 20px;
   position: static;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 * {
@@ -1480,14 +1480,14 @@ html {
 .notice h2 {
   font-family: Raleway;
   color: #fff;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 600;
   letter-spacing: 1px;
   height: 500px;
 }
 .notice h3 {
   color: #fff;
-  font-size: 35px;
+  font-size: 2.1875rem;
   padding: 25px 0;
   font-weight: 600;
 }
@@ -1497,13 +1497,13 @@ html {
 .notice a {
   display: block;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px 0;
   font-weight: 400;
 }
 .notice span {
   margin-left: 20px;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
   font-weight: 300;
   color: #d9d9d9;
@@ -1519,7 +1519,7 @@ html {
     margin: 0 auto;
   }
   .notice h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 1px;
     height: 500px;
@@ -1537,12 +1537,12 @@ html {
     height: 100px;
   }
   .notice h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     padding: 25px 0;
     font-weight: 600;
   }
   .notice a {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .notice .container-scroll .scroll-p {
     height: 600px;
@@ -1565,7 +1565,7 @@ html {
 }
 .bnr-img h2 {
   font-family: Raleway;
-  font-size: 80px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 200;
   line-height: 120%;
@@ -1574,7 +1574,7 @@ html {
 .bnr-img p {
   padding-top: 10px;
   font-family: Raleway;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 200;
   line-height: 120%;
@@ -1621,10 +1621,10 @@ html {
     left: 120px;
   }
   .bnr-img h2 {
-    font-size: 65px;
+    font-size: 4.0625rem;
   }
   .bnr-img p {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 12px;
   }
   .bnr-img .sub-bg img {
@@ -1654,7 +1654,7 @@ html {
     right: 140px;
   }
   .bnr-img h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
   .bnr-img .sub-bg img {
     width: 470px;
@@ -1689,7 +1689,7 @@ html {
   }
   .bnr-img p {
     top: 370px;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 10px;
   }
 }
@@ -1707,11 +1707,11 @@ html {
   }
   .bnr-img h2 {
     top: 290px;
-    font-size: 50px;
+    font-size: 3.125rem;
     left: 100px;
   }
   .bnr-img p {
-    font-size: 14px;
+    font-size: 0.875rem;
     left: 100px;
     letter-spacing: 8px;
   }
@@ -1723,10 +1723,10 @@ html {
     transform: translateX(-50%);
   }
   .bnr-img h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .bnr-img p {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 8px;
   }
 }
@@ -1764,7 +1764,7 @@ html {
   color: #000;
   /* noto-m/h1-32 */
   font-family: Noto Sans KR;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -1832,7 +1832,7 @@ html {
   color: #000;
   font-family: Noto Sans KR;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.8;
   font-style: normal;
   font-weight: 400;
@@ -1898,7 +1898,7 @@ html {
     padding: 15px 90px 15px;
   }
   .accordion ul > li > span {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1924,7 +1924,7 @@ html {
     width: 100%;
   }
   .accordion ul > li > ul > li > a p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .accordion .container {
     margin-top: 50px;
@@ -1935,33 +1935,86 @@ html {
 }
 
 .banner-img {
+  position: relative;
   margin: 0 auto;
 }
-.banner-img h2 {
+.banner-img .banner-text {
   position: absolute;
-  top: 430px;
-  left: 170px;
+  top: 60%;
+  left: 10%;
   z-index: 1000;
+}
+@media screen and (max-width: 1440px) {
+  .banner-img .banner-text {
+    top: 57%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .banner-img .banner-text {
+    top: 62%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-img .banner-text {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 744px) {
+  .banner-img .banner-text {
+    top: 65%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .banner-img .banner-text {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.banner-img h2 {
+  display: block;
   font-family: Raleway;
-  font-size: 80px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 200;
   line-height: 120%;
   color: #fff;
 }
+@media screen and (max-width: 1280px) {
+  .banner-img h2 {
+    font-size: 4.0625rem;
+  }
+}
+@media screen and (max-width: 744px) {
+  .banner-img h2 {
+    font-size: 3.125rem;
+  }
+}
 .banner-img p {
-  display: inline-block;
-  position: absolute;
-  top: 540px;
-  left: 170px;
-  z-index: 1010;
+  display: block;
+  padding-top: 10px;
   font-family: Raleway;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 200;
   line-height: 120%;
   color: #fff;
   letter-spacing: 8px;
+}
+@media screen and (max-width: 1280px) {
+  .banner-img p {
+    font-size: 1rem;
+    letter-spacing: 12px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .banner-img p {
+    font-size: 0.875rem;
+    left: 100px;
+    letter-spacing: 8px;
+  }
 }
 .banner-img .b-img {
   background: url(../../images/goods/banner1.jpg) 50% 20%/cover no-repeat;
@@ -1970,6 +2023,22 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.8;
+}
+@media screen and (max-width: 1440px) {
+  .banner-img .b-img {
+    height: 37.5rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .banner-img .b-img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-img .b-img {
+    height: 31.25rem;
+  }
 }
 .banner-img .black-b {
   display: block;
@@ -1982,24 +2051,47 @@ html {
   opacity: 0.8;
   background-color: #000;
 }
+@media screen and (max-width: 1440px) {
+  .banner-img .black-b {
+    height: 37.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-img .black-b {
+    height: 31.25rem;
+  }
+}
 
 .button {
-  width: 752px;
-  height: 80px;
+  width: 50%;
+  height: 8vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   font-family: Noto Sans KR;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 42px */
   letter-spacing: 17.5px;
+  padding-left: 15px;
   background-color: #212121;
   transition: background-color 0.5s ease-in-out;
   cursor: pointer;
+}
+@media screen and (max-width: 744px) {
+  .button {
+    height: 6vh;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .button {
+    font-size: 20px;
+    letter-spacing: 0.625rem;
+  }
 }
 .button:hover {
   background-color: #ff0000;
@@ -2013,22 +2105,42 @@ html {
   align-items: center;
   gap: 10px;
 }
+@media screen and (max-width: 1440px) {
+  .title {
+    margin: 80px 0 200px;
+  }
+}
 .title h3 {
   color: #000;
   font-family: Raleway;
-  font-size: 52px;
+  font-size: 3.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 62.4px */
+}
+@media screen and (max-width: 428px) {
+  .title h3 {
+    font-size: 2.8rem;
+  }
 }
 .title p {
   color: #646464;
   /* noto/body-r-19 */
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 22.8px */
+}
+@media screen and (max-width: 428px) {
+  .title p {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .title p {
+    font-size: 1.125rem;
+  }
 }
 
 .information .cont {
@@ -2084,12 +2196,23 @@ html {
   gap: 70px;
   width: 100%;
 }
+@media screen and (max-width: 428px) {
+  .info-text .depth1 {
+    gap: 30px;
+  }
+}
 .info-text .depth2 {
   display: flex;
   width: 100%;
   height: 113px;
   align-items: flex-start;
   gap: 70px;
+}
+@media screen and (max-width: 428px) {
+  .info-text .depth2 {
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 .info-text .depth3 {
   display: flex;
@@ -2098,12 +2221,24 @@ html {
   align-items: flex-start;
   gap: 70px;
 }
+@media screen and (max-width: 428px) {
+  .info-text .depth3 {
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
 .info-text strong {
   font-family: Noto Sans KR;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+@media screen and (max-width: 428px) {
+  .info-text strong {
+    font-size: 1.25rem;
+  }
 }
 .info-text .depth-1 {
   display: flex;
@@ -2114,7 +2249,7 @@ html {
   justify-content: start;
   align-items: flex-start;
   font-family: Noto Sans KR;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 26.4px */
@@ -2128,7 +2263,7 @@ html {
   align-items: flex-start;
   gap: 13px;
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
@@ -2142,10 +2277,18 @@ html {
   align-items: flex-start;
   gap: 16px;
   font-family: Noto Sans KR;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 200;
   line-height: 120%;
+}
+@media screen and (max-width: 428px) {
+  .info-text .depth-3 {
+    width: auto;
+    font-size: 14px;
+    gap: 12px;
+    height: auto;
+  }
 }
 .info-text .depth-3 .stretch {
   line-height: 1.6;
@@ -2166,7 +2309,7 @@ html {
   align-items: flex-start;
   gap: 8px;
   font-family: Noto Sans KR;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
@@ -2187,22 +2330,11 @@ html {
   .information .box-img {
     width: 530px;
   }
-  .title p {
-    font-size: 18px;
-  }
-  .title h3 {
-    font-size: 50px;
-  }
-  .title {
-    margin: 80px 0 200px;
-  }
-  .button {
-    font-size: 30px;
-  }
 }
 @media screen and (max-width: 744px) {
   .info-text .depth1 {
-    width: 100%;
+    width: auto;
+    flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -2216,6 +2348,18 @@ html {
     gap: 60px;
   }
 }
+@media screen and (max-width: 428px) {
+  .information .box-img {
+    width: 100%;
+  }
+  .information .cont {
+    width: auto;
+  }
+  .info-text {
+    gap: 30px;
+    margin-top: 100px;
+  }
+}
 .program {
   position: relative;
   display: inline-flex;
@@ -2224,12 +2368,12 @@ html {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 100px;
+  padding: 150px 0;
 }
 .program h3 {
   text-align: center;
   font-family: Raleway;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
@@ -2238,7 +2382,7 @@ html {
 .program p {
   text-align: center;
   font-family: Noto Sans KR;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2251,11 +2395,20 @@ html {
   margin: 30px auto 80px;
 }
 .program .performance {
-  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .program .performance .depth11 {
   display: flex;
   flex-direction: column;
+}
+.program .performance .goods-inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .program .performance .depth1 {
   display: flex;
@@ -2264,12 +2417,18 @@ html {
   width: 100%;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 744px) {
+  .program .performance .depth1 {
+    display: inline-block;
+    width: auto;
+  }
+}
 .program .performance .depth1-1 {
   width: 250px;
   display: flex;
   padding-right: 50px;
   font-family: Noto Sans KR;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2277,7 +2436,7 @@ html {
 .program .performance .depth1-2 {
   display: flex;
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2287,7 +2446,7 @@ html {
   display: flex;
   justify-content: center;
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2298,13 +2457,18 @@ html {
   justify-content: start;
   padding: 20px 0 10px;
 }
+@media screen and (max-width: 744px) {
+  .program .performance .depth2 {
+    flex-direction: column;
+  }
+}
 .program .performance .depth2-1 {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2313,7 +2477,7 @@ html {
 .program .performance .depth2-2 {
   display: flex;
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2326,7 +2490,7 @@ html {
     flex-wrap: wrap;
   }
   .program .performance .depth1 .depth1-1 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 .profile {
@@ -2352,14 +2516,14 @@ html {
   color: #fff;
   text-align: center;
   font-family: Raleway;
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
 }
 .profile .name-box p {
   font-family: Noto Sans KR;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -2374,7 +2538,7 @@ html {
 .profile .swiper-slide {
   height: 730px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   background: #c2c2c2;
   display: flex;
   flex-direction: column;
@@ -2385,7 +2549,7 @@ html {
   text-align: center;
 }
 .profile .img-name {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 400;
   line-height: 140%;
   display: flex;
@@ -2395,7 +2559,7 @@ html {
 .profile .txt {
   display: block;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   padding: 0 15px;
 }
@@ -2422,7 +2586,6 @@ body {
 
 .wrap {
   width: 100%;
-  height: 1000vh;
   background-color: #000;
 }
 
