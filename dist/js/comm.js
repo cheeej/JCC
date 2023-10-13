@@ -43,11 +43,21 @@ $(function () {
 
 // goods slide
 var swiper = new Swiper(".slide-goods", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    744: {
+      slidesPerView: 3, //브라우저가 768보다 클 때
+      spaceBetween: 30,
+    },
+    1028: {
+      slidesPerView: 4, //브라우저가 768보다 클 때
+      spaceBetween: 30,
+    },
   },
 });
 

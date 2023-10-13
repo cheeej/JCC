@@ -188,6 +188,10 @@
     margin: 0 auto;
     padding: 100px 0 100px;
     background-color: #000;
+    @media screen and (max-width: 744px) {
+      width: 530px;
+      padding: 100px 0 0;
+    }
   }
   .box-img {
     position: relative;
@@ -226,14 +230,29 @@
   flex-direction: column;
   align-items: center;
   gap: 26px;
+  @media screen and (max-width: 744px) {
+    gap: 60px;
+    margin-top: 100px;
+    align-items: flex-start;
+    margin: 100px auto;
+  }
+
   .depth1 {
-    @media screen and (max-width: 428px) {
-      gap: 30px;
-    }
     display: flex;
     align-items: flex-start;
     gap: 70px;
     width: 100%;
+    @media screen and (max-width: 744px) {
+      width: auto;
+      gap: 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 428px) {
+      gap: 30px;
+    }
   }
   .depth2 {
     display: flex;
@@ -241,9 +260,15 @@
     height: 113px;
     align-items: flex-start;
     gap: 70px;
+    @media screen and (max-width: 744px) {
+      width: auto;
+      gap: 40px;
+      flex-direction: column;
+      height: 130px;
+      margin-bottom: 50px;
+    }
     @media screen and (max-width: 428px) {
       gap: 30px;
-      flex-direction: column;
     }
   }
   // .depth2:nth-child(3) {
@@ -255,9 +280,14 @@
     height: 57px;
     align-items: flex-start;
     gap: 70px;
+    @media screen and (max-width: 744px) {
+      width: auto;
+      height: 120px;
+      gap: 40px;
+      flex-direction: column;
+    }
     @media screen and (max-width: 428px) {
       gap: 30px;
-      flex-direction: column;
       margin-top: 70px;
     }
   }
@@ -298,14 +328,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: 120%;
+    @media screen and (max-width: 744px) {
+      display: none;
+    }
   }
   .depth-3 {
-    @media screen and (max-width: 428px) {
-      width: auto;
-      font-size: 14px;
-      gap: 12px;
-      height: auto;
-    }
     display: flex;
     width: 254px;
     height: 218px;
@@ -318,6 +345,15 @@
     font-style: normal;
     font-weight: 200;
     line-height: 120%;
+    @media screen and (max-width: 744px) {
+      width: auto;
+    }
+    @media screen and (max-width: 428px) {
+      width: auto;
+      font-size: 14px;
+      gap: 12px;
+      height: auto;
+    }
     .stretch {
       line-height: 1.6;
     }
@@ -362,23 +398,7 @@
     width: 530px;
   }
 }
-@media screen and (max-width: 744px) {
-  .info-text .depth1 {
-    width: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .information .cont {
-    width: 530px;
-  }
-  .info-text .depth-2 {
-    display: none;
-  }
-  .info-text {
-    gap: 60px;
-  }
-}
+
 @media screen and (max-width: 428px) {
   .information .box-img {
     width: 100%;
@@ -430,6 +450,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 744px) {
+      align-items: flex-start;
+      width: 80%;
+
+      margin: 0 auto;
+    }
     .depth11 {
       display: flex;
       flex-direction: column;
@@ -461,6 +487,13 @@
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
+      @media screen and (max-width: 744px) {
+        font-size: 1.25rem;
+      }
+      @media screen and (max-width: 428px) {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
     }
     .depth1-2 {
       // width: 552px;
@@ -471,6 +504,10 @@
       font-weight: 400;
       line-height: 120%;
       gap: 10px;
+      @media screen and (max-width: 428px) {
+        font-size: 0.9rem;
+        flex-direction: column;
+      }
     }
     p {
       display: flex;
@@ -501,6 +538,9 @@
       font-weight: 400;
       line-height: 120%;
       gap: 20px;
+      @media screen and (max-width: 428px) {
+        font-size: 0.9rem;
+      }
     }
     .depth2-2 {
       display: flex;
@@ -511,6 +551,9 @@
       line-height: 120%;
       gap: 10px;
       padding-left: 10px;
+      @media screen and (max-width: 428px) {
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -518,11 +561,6 @@
   .program .goods-inner .performance .depth1 {
     flex-wrap: wrap;
     // align-content: flex-start;
-  }
-
-  .program .performance .depth1 .depth1-1 {
-    font-size: 1.25rem;
-    // align-items: center;
   }
 }
 
@@ -534,6 +572,9 @@
   padding-bottom: 150px;
 
   .goods-inner {
+    @media screen and (max-width: 744px) {
+      flex-direction: column;
+    }
     position: relative;
     display: flex;
     align-items: center;
@@ -541,6 +582,12 @@
   }
 
   .name-box {
+    @media screen and (max-width: 744px) {
+      width: 100%;
+      height: 85px;
+      margin-bottom: 50px;
+    }
+
     // position: absolute;
     // top: 1200px;
     // left: 10%;
@@ -574,6 +621,10 @@
   // slider
 
   .swiper {
+    @media screen and (max-width: 744px) {
+      width: 90%;
+    }
+
     display: block;
     // position: absolute;
     // top: 1000px;
